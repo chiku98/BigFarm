@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Header Navigation Menu With Scroll Indicator Bar - Html, Css & Javascript</title>
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/nav.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/footer.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/property.css')}}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+
+    <!-- end Bootstrap -->
+</head>
+
+<body style="background-color: rgb(237, 241, 245);">
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="uil-angle-up"></i></button>
+    <header class="header">
+        <div class="container">
+            <div class="row v-center">
+                <div class="header-item item-left">
+                    <div class="logo">
+                        <a href="#">BigFarm</a>
+                    </div>
+                </div>
+                <!-- menu start here -->
+                <div class="header-item item-center">
+                    <div class="menu-overlay">
+                    </div>
+                    <nav class="menu">
+                        <div class="mobile-menu-head">
+                            <div class="go-back"><i class="uil uil-angle-left"></i></div>
+                            <div class="current-menu-title"></div>
+                            <div class="mobile-menu-close">&times;</div>
+                        </div>
+                        <ul class="menu-main">
+                            <li>
+                                <a href="#">Home</a>
+                            </li>
+                            <li class="menu-item-has-children">
+                                <a href="#">Buy <i class="uil uil-angle-down"></i></a>
+                                <div class="sub-menu mega-menu mega-menu-column-4">
+                                    <div class="list-item">
+                                        <h4 class="title">Popular Choices</h4>
+                                        <ul>
+                                            <li><a href="Landing_page.html">Product List</a></li>
+                                            <li><a href="#">Owner Properties</a></li>
+                                            <li><a href="#">Verified Properties</a></li>
+                                            <li><a href="#">Immedieatly Available</a></li>
+                                        </ul>
+                                        <!-- <a href="#">
+                    <img src="img/a.jpg" alt="new Product">
+                    <h4 class="title">Product 1</h4>
+                    </a> -->
+                                    </div>
+                                    <div class="list-item">
+                                        <h4 class="title">Property Type</h4>
+                                        <ul>
+                                            <li><a href="Landing_page.html">Product List</a></li>
+                                            <li><a href="#">Flat for rent</a></li>
+                                            <li><a href="#">Villa for rent</a></li>
+                                            <li><a href="#">Plot for rent</a></li>
+                                        </ul>
+
+                                    </div>
+                                    <div class="list-item">
+                                        <h4 class="title">Budget</h4>
+                                        <ul>
+                                            <li><a href="#">Under Rs.10,000</a></li>
+                                            <li><a href="#">Rs. 10,000-20,000</a></li>
+                                            <li><a href="#">Rs.15,000-25,000</a></li>
+                                            <li><a href="#">Above 25,000</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="list-item">
+                                        <h4 class="title">Explore</h4>
+                                        <ul>
+                                            <li><a href="Landing_page.html">Builders In New-Delhi</a></li>
+                                            <li><a href="#">Builders In New-Delhi</a></li>
+                                            <li><a href="#">Localites In New-Delhi</a></li>
+                                            <li><a href="#">Projects In New-Delhi</a></li>
+                                            <li><a href="#">Investment Hotspot</a></li>
+                                            <li><a href="#">Find An Agent</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="list-item">
+                                        <h4 class="title">Buying Tools</h4>
+                                        <ul>
+                                            <li><a href="Landing_page.html">Propworth</a></li>
+                                            <li><a href="#">Rates&Trends</a></li>
+                                            <li><a href="#">Buy vs Rent</a></li>
+                                            <li><a href="#">Tips and Guides</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="menu-item-has-children">
+                                <a href="#">Rent <i class="uil uil-angle-down"></i></a>
+                                <div class="sub-menu mega-menu mega-menu-column-4">
+                                    <div class="list-item">
+                                        <h4 class="title">Popular Choices</h4>
+                                        <ul>
+                                            <li><a href="Landing_page.html">Product List</a></li>
+                                            <li><a href="#">Owner Properties</a></li>
+                                            <li><a href="#">Verified Properties</a></li>
+                                            <li><a href="#">Immedieatly Available</a></li>
+                                        </ul>
+                                        <h4 class="title">Property Type</h4>
+                                        <ul>
+                                            <li><a href="#">Villa for rent</a></li>
+                                            <li><a href="#">Flat for rent</a></li>
+                                            <li><a href="#">Plot for rent</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="list-item">
+                                        <h4 class="title">Budget</h4>
+                                        <ul>
+                                            <li><a href="#">Under Rs.10,000</a></li>
+                                            <li><a href="#">Rs. 10,000-20,000</a></li>
+                                            <li><a href="#">Rs.15,000-25,000</a></li>
+                                            <li><a href="#">Above 25,000</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="list-item">
+                                        <img src="{{url_for('static', filename='img/A1.png')}}" alt="shop">
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="menu-item-has-children">
+                                <a href="#">Sell <i class="uil uil-angle-down"></i></a>
+                                <div class="sub-menu mega-menu mega-menu-column-4">
+                                    <div class="list-item">
+                                        <h4 class="title">For Owner</h4>
+                                        <ul>
+                                            <li><a href="Landing_page.html">Post Property</a></li>
+                                            <li><a href="#">My Dashboard</a></li>
+                                        </ul>
+                                        <h4 class="title">For Agent & Builder</h4>
+                                        <ul>
+                                            <li><a href="#">My Dashboard</a></li>
+                                            <li><a href="#">Ad Packages</a></li>
+                                            <li><a href="#">iAdvantage</a></li>
+                                            <li><a href="#">Developer Lounge</a></li>
+                                            <li><a href="#">Sales Enquiry</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="list-item">
+                                        <h4 class="title">Selling Tools</h4>
+                                        <ul>
+                                            <li><a href="#">Property Valuation</a></li>
+                                            <li><a href="#">Find An Agent</a></li>
+                                            <li><a href="#">Rates and Trends</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="list-item">
+                                        <img src="{{url_for('static', filename='img/A1.png')}}" alt="shop">
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="menu-item-has-children">
+                                <a href="#">Property Services<i class="uil uil-angle-down"></i></a>
+                                <div class="sub-menu mega-menu mega-menu-column-4">
+                                    <div class="list-item">
+                                        <h4 class="title">Rent Services</h4>
+                                        <ul>
+                                            <li><a href="Landing_page.html">Pay Rent with Credit Card</a></li>
+                                            <li><a href="#">Rent Agreement</a></li>
+                                            <li><a href="#">Generate Rent Receipt</a></li>
+                                            <li><a href="#">Tenant Verification</a></li>
+                                            <li><a href="#">Office Leasing Assitance</a></li>
+                                        </ul>
+                                        <h4 class="title">Buy/Sell Services</h4>
+                                        <ul>
+                                            <li><a href="#">Property Valuation</a></li>
+                                            <li><a href="#">Legal Title Check</a></li>
+                                            <li><a href="#">Property Lawyers</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="list-item">
+                                        <img src="{{url_for('static', filename='img/A1.png')}}" alt="shop">
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#">Contact</a>
+                            </li>
+                            <li class="menu-item-has-children">
+                                <a href="#">Help <i class="uil uil-angle-down"></i></a>
+                                <div class="sub-menu single-column-menu">
+                                    <ul>
+                                        <li><a href="#">Help Center</a></li>
+                                        <li><a href="#">Sales Enquiry</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <!-- menu end here -->
+                <div class="header-item item-right">
+                    <button class="main_nav_login_button">Login</button>
+                    <!-- <a href="#"><i class="fas fa-heart"></i></a>
+          <a href="#"><i class="fas fa-shopping-cart"></i></a> -->
+                    <!-- mobile menu trigger -->
+                    <div class="mobile-menu-trigger">
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator-container">
+            <div class="scroll-indicator-bar"></div>
+        </div>
+    </header>
+    <!-- header end -->
+    <div class="container">
+        <div class="property_firstcard">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="">Save your Search</h5>
+                    <p class="">With supporting text below as a natural lead-in to additional content.</p>
+                </div>
+            </div>
+        </div>
+        <!-- Stack the columns on mobile by making one full-width and the other half-width -->
+        <div class="row">
+            <div class="col-md-9">
+                <div class="card mb-2">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-sm-2 Property_Card">
+                                <img src="{{url_for('static', filename='img/a.jpg')}}" alt="shop" class="img-fluid Property_Card">
+                                <h6 class="pt-3 owner_name"> Owner: kg</h6>
+                            </div>
+                            <div class="col-sm-7 property_comapny_details">
+                                <h6 class="">Only On Bigfarm</h6>
+                                <h5>4 BHK Villa for Sale in Kalky Shubh Aarambh Villas, Hans Pal</h5>
+                                <span>K & K Plaza</span>
+                                <div class="accordion accordion-flush" id="accordionFlushExample">
+                                    <div class="accordion-item property_icon_button">
+                                        <h2 class="accordion-header " id="flush-headingOne">
+                                            <button class="accordion-button collapsed property_icon_button"
+                                                type="button" data-bs-toggle="collapse"
+                                                data-bs-target="#flush-collapseOne1" aria-expanded="false"
+                                                aria-controls="flush-collapseOne">
+                                                <div class="row">
+                                                    <div class="col-6 col-md-4"><i class="uil-archway"></i> icon and
+                                                        text</div>
+                                                    <div class="col-6 col-md-4"><i class="uil-archway"></i> icon and
+                                                        text</div>
+                                                    <div class="col-6 col-md-4"><i class="uil-archway"></i> icon and
+                                                        text</div>
+                                                </div>
+                                            </button>
+                                        </h2>
+                                        <div id="flush-collapseOne1" class="accordion-collapse collapse"
+                                            aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                            <div class="accordion-body">
+                                                <div class="row">
+                                                    <div class="col-6 col-md-4"><i class="uil-archway"></i> icon and
+                                                        text</div>
+                                                    <div class="col-6 col-md-4"><i class="uil-archway"></i> icon and
+                                                        text</div>
+                                                    <div class="col-6 col-md-4"><i class="uil-archway"></i> icon and
+                                                        text</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <i class="uil-archway"></i> icon and text
+                                <i class="uil-archway"></i> icon and text
+                                <p>Exclusively constructed, skilfully designed and duly ..... <a href="#">Read More</a>
+                                </p>
+                            </div>
+                            <div class="col-sm-3 prperty_pricing_details">
+                                <h6 class="mt-2">Price</h6>
+                                <h5 class="mt-2 mb-4">Rs. 1,00,000 <span>per sqft</span></h5>
+                                <a href="/details"><button class="btn contact_owner mb-2">Contact Owner</button></a>
+                                <button class="btn contact_details mb-2">Get Phone No.</button>
+                                <a href="#" class="share_feedback mb-2">Share Feedback</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mb-2">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-sm-2 Property_Card">
+                                <img src="{{url_for('static', filename='img/a.jpg')}}" alt="shop" class="img-fluid Property_Card">
+                                <h6 class="pt-3 owner_name"> Owner: kg</h6>
+                            </div>
+                            <div class="col-sm-7">
+                                <h6>Only On Bigfarm</h6>
+                                <h5>4 BHK Villa for Sale in Kalky Shubh Aarambh Villas, Hans Pal</h5>
+                                <span>K & K Plaza</span>
+                                <div class="accordion accordion-flush" id="accordionFlushExample">
+                                    <div class="accordion-item property_icon_button">
+                                        <h2 class="accordion-header " id="flush-headingOne">
+                                            <button class="accordion-button collapsed property_icon_button"
+                                                type="button" data-bs-toggle="collapse"
+                                                data-bs-target="#flush-collapseOne2" aria-expanded="false"
+                                                aria-controls="flush-collapseOne">
+                                                <div class="row">
+                                                    <div class="col-6 col-md-4"><i class="uil-archway"></i> icon and
+                                                        text</div>
+                                                    <div class="col-6 col-md-4"><i class="uil-archway"></i> icon and
+                                                        text</div>
+                                                    <div class="col-6 col-md-4"><i class="uil-archway"></i> icon and
+                                                        text</div>
+                                                </div>
+                                            </button>
+                                        </h2>
+                                        <div id="flush-collapseOne2" class="accordion-collapse collapse"
+                                            aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                            <div class="accordion-body">
+                                                <div class="row">
+                                                    <div class="col-6 col-md-4"><i class="uil-archway"></i> icon and
+                                                        text</div>
+                                                    <div class="col-6 col-md-4"><i class="uil-archway"></i> icon and
+                                                        text</div>
+                                                    <div class="col-6 col-md-4"><i class="uil-archway"></i> icon and
+                                                        text</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <i class="uil-archway"></i> icon and text
+                                <i class="uil-archway"></i> icon and text
+                                <p>Exclusively constructed, skilfully designed and duly ..... <a href="#">Read More</a>
+                                </p>
+                            </div>
+                            <div class="col-sm-3 prperty_pricing_details">
+                                <h6 class="mt-2">Price</h6>
+                                <h5 class="mt-2 mb-4">Rs. 1,00,000 <span>per sqft</span></h5>
+                                <button class="btn contact_owner mb-2">Contact Owner</button>
+                                <button class="btn contact_details mb-2">Get Phone No.</button>
+                                <a href="#" class="share_feedback mb-2">Share Feedback</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mb-2">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-sm-2 Property_Card">
+                                <img src="{{url_for('static', filename='img/a.jpg')}}" alt="shop" class="img-fluid Property_Card">
+                                <h6 class="pt-3 owner_name"> Owner: kg</h6>
+                            </div>
+                            <div class="col-sm-7">
+                                <h6>Only On Bigfarm</h6>
+                                <h5>4 BHK Villa for Sale in Kalky Shubh Aarambh Villas, Hans Pal</h5>
+                                <span>K & K Plaza</span>
+                                <div class="accordion accordion-flush" id="accordionFlushExample">
+                                    <div class="accordion-item property_icon_button">
+                                        <h2 class="accordion-header " id="flush-headingOne">
+                                            <button class="accordion-button collapsed property_icon_button"
+                                                type="button" data-bs-toggle="collapse"
+                                                data-bs-target="#flush-collapseOne3" aria-expanded="false"
+                                                aria-controls="flush-collapseOne">
+                                                <div class="row">
+                                                    <div class="col-6 col-md-4"><i class="uil-archway"></i> icon and
+                                                        text</div>
+                                                    <div class="col-6 col-md-4"><i class="uil-archway"></i> icon and
+                                                        text</div>
+                                                    <div class="col-6 col-md-4"><i class="uil-archway"></i> icon and
+                                                        text</div>
+                                                </div>
+                                            </button>
+                                        </h2>
+                                        <div id="flush-collapseOne3" class="accordion-collapse collapse"
+                                            aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                            <div class="accordion-body">
+                                                <div class="row">
+                                                    <div class="col-6 col-md-4"><i class="uil-archway"></i> icon and
+                                                        text</div>
+                                                    <div class="col-6 col-md-4"><i class="uil-archway"></i> icon and
+                                                        text</div>
+                                                    <div class="col-6 col-md-4"><i class="uil-archway"></i> icon and
+                                                        text</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <i class="uil-archway"></i> icon and text
+                                <i class="uil-archway"></i> icon and text
+                                <p>Exclusively constructed, skilfully designed and duly ..... <a href="#">Read More</a>
+                                </p>
+                            </div>
+                            <div class="col-sm-3 prperty_pricing_details">
+                                <h6 class="mt-2">Price</h6>
+                                <h5 class="mt-2 mb-4">Rs. 1,00,000 <span>per sqft</span></h5>
+                                <button class="btn contact_owner mb-2">Contact Owner</button>
+                                <button class="btn contact_details mb-2">Get Phone No.</button>
+                                <a href="#" class="share_feedback mb-2">Share Feedback</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mb-2">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-sm-2 Property_Card">
+                                <img src="{{url_for('static', filename='img/a.jpg')}}" alt="shop" class="img-fluid Property_Card">
+                                <h6 class="pt-3 owner_name"> Owner: kg</h6>
+                            </div>
+                            <div class="col-sm-7">
+                                <h6>Only On Bigfarm</h6>
+                                <h5>4 BHK Villa for Sale in Kalky Shubh Aarambh Villas, Hans Pal</h5>
+                                <span>K & K Plaza</span>
+                                <div class="accordion accordion-flush" id="accordionFlushExample">
+                                    <div class="accordion-item property_icon_button">
+                                        <h2 class="accordion-header " id="flush-headingOne">
+                                            <button class="accordion-button collapsed property_icon_button"
+                                                type="button" data-bs-toggle="collapse"
+                                                data-bs-target="#flush-collapseOne4" aria-expanded="false"
+                                                aria-controls="flush-collapseOne">
+                                                <div class="row">
+                                                    <div class="col-6 col-md-4"><i class="uil-archway"></i> icon and
+                                                        text</div>
+                                                    <div class="col-6 col-md-4"><i class="uil-archway"></i> icon and
+                                                        text</div>
+                                                    <div class="col-6 col-md-4"><i class="uil-archway"></i> icon and
+                                                        text</div>
+                                                </div>
+                                            </button>
+                                        </h2>
+                                        <div id="flush-collapseOne4" class="accordion-collapse collapse"
+                                            aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                            <div class="accordion-body">
+                                                <div class="row">
+                                                    <div class="col-6 col-md-4"><i class="uil-archway"></i> icon and
+                                                        text</div>
+                                                    <div class="col-6 col-md-4"><i class="uil-archway"></i> icon and
+                                                        text</div>
+                                                    <div class="col-6 col-md-4"><i class="uil-archway"></i> icon and
+                                                        text</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <i class="uil-archway"></i> icon and text
+                                <i class="uil-archway"></i> icon and text
+                                <p>Exclusively constructed, skilfully designed and duly ..... <a href="#">Read More</a>
+                                </p>
+                            </div>
+                            <div class="col-sm-3 prperty_pricing_details">
+                                <h6 class="mt-2">Price</h6>
+                                <h5 class="mt-2 mb-4">Rs. 1,00,000 <span>per sqft</span></h5>
+                                <button class="btn contact_owner mb-2">Contact Owner</button>
+                                <button class="btn contact_details mb-2">Get Phone No.</button>
+                                <a href="#" class="share_feedback mb-2">Share Feedback</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mb-2">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-sm-2 Property_Card">
+                                <img src="{{url_for('static', filename='img/a.jpg')}}" alt="shop" class="img-fluid Property_Card">
+                                <h6 class="pt-3 owner_name"> Owner: kg</h6>
+                            </div>
+                            <div class="col-sm-7">
+                                <h6>Only On Bigfarm</h6>
+                                <h5>4 BHK Villa for Sale in Kalky Shubh Aarambh Villas, Hans Pal</h5>
+                                <span>K & K Plaza</span>
+                                <div class="accordion accordion-flush" id="accordionFlushExample">
+                                    <div class="accordion-item property_icon_button">
+                                        <h2 class="accordion-header " id="flush-headingOne">
+                                            <button class="accordion-button collapsed property_icon_button"
+                                                type="button" data-bs-toggle="collapse"
+                                                data-bs-target="#flush-collapseOne5" aria-expanded="false"
+                                                aria-controls="flush-collapseOne">
+                                                <div class="row">
+                                                    <div class="col-6 col-md-4"><i class="uil-archway"></i> icon and
+                                                        text</div>
+                                                    <div class="col-6 col-md-4"><i class="uil-archway"></i> icon and
+                                                        text</div>
+                                                    <div class="col-6 col-md-4"><i class="uil-archway"></i> icon and
+                                                        text</div>
+                                                </div>
+                                            </button>
+                                        </h2>
+                                        <div id="flush-collapseOne5" class="accordion-collapse collapse"
+                                            aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                            <div class="accordion-body">
+                                                <div class="row">
+                                                    <div class="col-6 col-md-4"><i class="uil-archway"></i> icon and
+                                                        text</div>
+                                                    <div class="col-6 col-md-4"><i class="uil-archway"></i> icon and
+                                                        text</div>
+                                                    <div class="col-6 col-md-4"><i class="uil-archway"></i> icon and
+                                                        text</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <i class="uil-archway"></i> icon and text
+                                <i class="uil-archway"></i> icon and text
+                                <p>Exclusively constructed, skilfully designed and duly ..... <a href="#">Read More</a>
+                                </p>
+                            </div>
+                            <div class="col-sm-3 prperty_pricing_details">
+                                <h6 class="mt-2">Price</h6>
+                                <h5 class="mt-2 mb-4">Rs. 1,00,000 <span>per sqft</span></h5>
+                                <button class="btn contact_owner mb-2">Contact Owner</button>
+                                <button class="btn contact_details mb-2">Get Phone No.</button>
+                                <a href="#" class="share_feedback mb-2">Share Feedback</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-auto col-md-3">
+                <div class="card mb-2">
+                    <img src="{{url_for('static', filename='img/a.jpg')}}" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                            additional content. This content is a little bit longer.</p>
+                    </div>
+
+                </div>
+                <div class="card mb-2">
+                    <img src="{{url_for('static', filename='img/a.jpg')}}" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                            additional content. This content is a little bit longer.</p>
+                    </div>
+
+                </div>
+                <div class="card mb-2">
+                    <img src="{{url_for('static', filename='img/a.jpg')}}" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                            additional content. This content is a little bit longer.</p>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Columns start at 50% wide on mobile and bump up to 33.3% wide on desktop -->
+    </div>
+
+    <footer class="main-foot-section">
+        <div class="footer-content">
+            <div class="left box">
+                <div class="upper">
+                    <div class="topic">About us</div>
+                    <p>CodingLab is a channel where you can learn HTML,
+                        CSS, and also JavaScript along with creative CSS Animations and Effects.</p>
+                </div>
+                <div class="lower">
+                    <div class="topic">Contact us</div>
+                    <div class="phone">
+                        <a href="#"><i class="fas fa-phone-volume"></i>+007 9089 6767</a>
+                    </div>
+                    <div class="email">
+                        <a href="#"><i class="fas fa-envelope"></i>abc@gmail.com</a>
+                    </div>
+                </div>
+            </div>
+            <div class="middle box">
+                <div class="topic">Our Services</div>
+                <div><a href="#">Web Design, Development</a></div>
+                <div><a href="#">Web UX Design, Reasearch</a></div>
+                <div><a href="#">Web User Interface Design</a></div>
+                <div><a href="#">Theme Development, Design</a></div>
+                <div><a href="#">Mobile Application Design</a></div>
+                <div><a href="#">Wire raming & Prototyping</a></div>
+            </div>
+            <div class="right box">
+                <div class="topic">Subscribe us</div>
+                <form action="#">
+                    <input type="text" placeholder="Enter email address">
+                    <input type="submit" name="" value="Send">
+                    <div class="media-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="bottom">
+            <p>Copyright © 2020 <a href="#">DivineAi Pvt. Ltd</a> All rights reserved</p>
+        </div>
+    </footer>
+    <script src="{{url_for('static', filename='js/sroll.js')}}"></script>
+    <script src="{{url_for('static', filename='js/nav.js')}}"></script>
+    <script src="{{url_for('static', filename='js/scroll_top.js')}}"></script>
+</body>
+
+</html>

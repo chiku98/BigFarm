@@ -1,0 +1,1619 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Profile details</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="{{'static/css/profiledetails.css'}}">
+<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+  <link rel="stylesheet" href="{{'static/css/Landing_page.css'}}">
+  <!-- <link rel="stylesheet" href="./footer.css"> -->
+
+
+</head>
+<body>
+
+	<!-- header start -->
+
+  <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="uil-angle-up"></i></button>
+  <header class="header">
+    <div class="container">
+      <div class="row v-center">
+        <div class="header-item item-left">
+          <div class="logo">
+            <a href="#">BigFarm</a>
+          </div>
+        </div>
+        <!-- menu start here -->
+        <div class="header-item item-center">
+          <div class="menu-overlay">
+          </div>
+          <nav class="menu">
+            <div class="mobile-menu-head">
+              <div class="go-back"><i class="uil uil-angle-left"></i></div>
+              <div class="current-menu-title"></div>
+              <div class="mobile-menu-close">&times;</div>
+            </div>
+            <ul class="menu-main">
+              <li>
+                <a href="#">Home</a>
+              </li>
+              <li class="menu-item-has-children">
+                <a href="#">Buy <i class="uil uil-angle-down"></i></a>
+                <div class="sub-menu mega-menu mega-menu-column-4">
+                  <div class="list-item">
+                    <h4 class="title">Popular Choices</h4>
+                    <ul>
+                      <li><a href="Landing_page.html">Product List</a></li>
+                      <li><a href="#">Owner Properties</a></li>
+                      <li><a href="#">Verified Properties</a></li>
+                      <li><a href="#">Immedieatly Available</a></li>
+                    </ul>
+                    <!-- <a href="#">
+                    <img src="img/p1.jpg" alt="new Product">
+                    <h4 class="title">Product 1</h4>
+                    </a> -->
+                  </div>
+                  <div class="list-item">
+                    <h4 class="title">Property Type</h4>
+                    <ul>
+                      <li><a href="Landing_page.html">Product List</a></li>
+                      <li><a href="#">Flat for rent</a></li>
+                      <li><a href="#">Villa for rent</a></li>
+                      <li><a href="#">Plot for rent</a></li>
+                    </ul>
+
+                  </div>
+                  <div class="list-item">
+                    <h4 class="title">Budget</h4>
+                    <ul>
+                      <li><a href="#">Under Rs.10,000</a></li>
+                      <li><a href="#">Rs. 10,000-20,000</a></li>
+                      <li><a href="#">Rs.15,000-25,000</a></li>
+                      <li><a href="#">Above 25,000</a></li>
+                    </ul>
+                  </div>
+                  <div class="list-item">
+                    <h4 class="title">Explore</h4>
+                    <ul>
+                      <li><a href="Landing_page.html">Builders In New-Delhi</a></li>
+                      <li><a href="#">Builders In New-Delhi</a></li>
+                      <li><a href="#">Localites In New-Delhi</a></li>
+                      <li><a href="#">Projects In New-Delhi</a></li>
+                      <li><a href="#">Investment Hotspot</a></li>
+                      <li><a href="#">Find An Agent</a></li>
+                    </ul>
+                  </div>
+                  <div class="list-item">
+                    <h4 class="title">Buying Tools</h4>
+                    <ul>
+                      <li><a href="Landing_page.html">Propworth</a></li>
+                      <li><a href="#">Rates&Trends</a></li>
+                      <li><a href="#">Buy vs Rent</a></li>
+                      <li><a href="#">Tips and Guides</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+              <li class="menu-item-has-children">
+                <a href="#">Rent <i class="uil uil-angle-down"></i></a>
+                <div class="sub-menu mega-menu mega-menu-column-4">
+                  <div class="list-item">
+                    <h4 class="title">Popular Choices</h4>
+                    <ul>
+                      <li><a href="Landing_page.html">Product List</a></li>
+                      <li><a href="#">Owner Properties</a></li>
+                      <li><a href="#">Verified Properties</a></li>
+                      <li><a href="#">Immedieatly Available</a></li>
+                    </ul>
+                    <h4 class="title">Property Type</h4>
+                    <ul>
+                      <li><a href="#">Villa for rent</a></li>
+                      <li><a href="#">Flat for rent</a></li>
+                      <li><a href="#">Plot for rent</a></li>
+                    </ul>
+                  </div>
+                  <div class="list-item">
+                    <h4 class="title">Budget</h4>
+                    <ul>
+                      <li><a href="#">Under Rs.10,000</a></li>
+                      <li><a href="#">Rs. 10,000-20,000</a></li>
+                      <li><a href="#">Rs.15,000-25,000</a></li>
+                      <li><a href="#">Above 25,000</a></li>
+                    </ul>
+                  </div>
+                  <div class="list-item">
+                    <img src="img/A1.png" alt="shop">
+                  </div>
+                </div>
+              </li>
+              <li class="menu-item-has-children">
+                <a href="#">Sell <i class="uil uil-angle-down"></i></a>
+                <div class="sub-menu mega-menu mega-menu-column-4">
+                  <div class="list-item">
+                    <h4 class="title">For Owner</h4>
+                    <ul>
+                      <li><a href="Landing_page.html">Post Property</a></li>
+                      <li><a href="#">My Dashboard</a></li>
+                    </ul>
+                    <h4 class="title">For Agent & Builder</h4>
+                    <ul>
+                      <li><a href="#">My Dashboard</a></li>
+                      <li><a href="#">Ad Packages</a></li>
+                      <li><a href="#">iAdvantage</a></li>
+                      <li><a href="#">Developer Lounge</a></li>
+                      <li><a href="#">Sales Enquiry</a></li>
+                    </ul>
+                  </div>
+                  <div class="list-item">
+                    <h4 class="title">Selling Tools</h4>
+                    <ul>
+                      <li><a href="#">Property Valuation</a></li>
+                      <li><a href="#">Find An Agent</a></li>
+                      <li><a href="#">Rates and Trends</a></li>
+                    </ul>
+                  </div>
+                  <div class="list-item">
+                    <img src="img/A1.png" alt="shop">
+                  </div>
+                </div>
+              </li>
+              <li class="menu-item-has-children">
+                <a href="#">Property Services<i class="uil uil-angle-down"></i></a>
+                <div class="sub-menu mega-menu mega-menu-column-4">
+                  <div class="list-item">
+                    <h4 class="title">Rent Services</h4>
+                    <ul>
+                      <li><a href="Landing_page.html">Pay Rent with Credit Card</a></li>
+                      <li><a href="#">Rent Agreement</a></li>
+                      <li><a href="#">Generate Rent Receipt</a></li>
+                      <li><a href="#">Tenant Verification</a></li>
+                      <li><a href="#">Office Leasing Assitance</a></li>
+                    </ul>
+                    <h4 class="title">Buy/Sell Services</h4>
+                    <ul>
+                      <li><a href="#">Property Valuation</a></li>
+                      <li><a href="#">Legal Title Check</a></li>
+                      <li><a href="#">Property Lawyers</a></li>
+                    </ul>
+                  </div>
+                  <div class="list-item">
+                    <img src="img/A1.png" alt="shop">
+                  </div>
+                </div>
+              </li>
+              <li>
+                <a href="#">Contact</a>
+              </li>
+              <li class="menu-item-has-children">
+                <a href="#">Help <i class="uil uil-angle-down"></i></a>
+                <div class="sub-menu single-column-menu">
+                  <ul>
+                    <li><a href="#">Help Center</a></li>
+                    <li><a href="#">Sales Enquiry</a></li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <!-- menu end here -->
+        <div class="header-item item-right">
+          <button class="main_nav_login_button">Login</button>
+          <!-- <a href="#"><i class="fas fa-heart"></i></a>
+          <a href="#"><i class="fas fa-shopping-cart"></i></a> -->
+          <!-- mobile menu trigger -->
+          <div class="mobile-menu-trigger">
+            <span></span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-indicator-container">
+      <div class="scroll-indicator-bar"></div>
+    </div>
+  </header>
+
+	<!-- header end -->
+<div class="container p-5">
+	<ul class="nav nav-tabs nav-justified navtop1">
+		<li class="nav-item mt-1 active">
+			<a href="#section-one" class="nav-link bg-success text-white" data-toggle="tab">Profile</a>
+		</li>
+		<li class="nav-item ml-1 mt-1">
+			<a href="#section-four" class="nav-link bg-success text-white" data-toggle="tab">Properties</a>
+		</li>
+		<li class="nav-item ml-1 mt-1">
+			<a href="#section-six" class="nav-link bg-success text-white" data-toggle="tab">Subscription</a>
+		</li>
+	</ul>
+	<div class="tab-content shadow-lg">
+		<div class="tab-pane fade show bg-white text-dark active" id="section-one">
+			
+			<div class="row">
+				<div class="col-md-3 w-100">
+					<ul class="nav nav-tabs flex-column">
+						<li class="box mt-3" style="--color: #28a416">
+							<a href="#heading-one" class="nav-link active" data-toggle="tab">
+							<div class="content">
+        						<div class="icon">
+          							<ion-icon name="code-slash-outline"></ion-icon>
+        						</div>
+        						<div class="text">
+         					   		<h3>Profile Details</h3>
+       							</div>
+      						</div>
+        					</a>
+        				</li>
+        				<li class="box mt-3" style="--color: #26237ac7">
+							<a href="#heading-two" class="nav-link" data-toggle="tab">
+							<div class="content">
+        						<div class="icon">
+          							<ion-icon name="color-palette-outline"></ion-icon>
+        						</div>
+        						<div class="text">
+         					   		<h3>Edit Login Details</h3>
+       							</div>
+      						</div>
+        					</a>
+        				</li>
+        				<li class="box mt-3" style="--color: #94098fc4">
+							<a href="#heading-three" class="nav-link" data-toggle="tab">
+							<div class="content">
+        						<div class="icon">
+          							<ion-icon name="flag-outline"></ion-icon>
+        						</div>
+        						<div class="text">
+         					   		<h3>Change Password</h3>
+       							</div>
+      						</div>
+        					</a>
+        				</li>
+        				<li class="box mt-3" style="--color: #c2bc09cc">
+							<a href="#heading-four" class="nav-link" data-toggle="tab">
+							<div class="content">
+        						<div class="icon">
+          							<ion-icon name="flag-outline"></ion-icon>
+        						</div>
+        						<div class="text">
+         					   		<h3>Saved Messages</h3>
+       							</div>
+      						</div>
+        					</a>
+        				</li>
+						
+					</ul>
+				</div>
+				<div class="col-md-9 w-100">
+					<div class="tab-content flex-center">
+						<div class="tab-pane fade show active" id="heading-one">
+						<div class="col-lg-12 col-md-12 col-sm-12 col-sx-12 mt-3">
+							<h3 class="phdetail">Profile Details</h3>
+						</div>
+						
+						<div class="col-lg-12 col-md-12 col-sm-12 col-sx-12 phdetail1">
+							<div class="col-lg-4 col-md-4 col-sm-4 col-sx-4">
+								<ul class="ulli">
+									<li>Name :</li>
+									<li class="liul">Registered As :</li>
+									<li class="liul">Email :</li>
+									<li class="liul">Mobile :</li>
+									<li class="liul">Password :</li>
+								</ul>
+							</div>
+							<div class="col-lg-8 col-md-8 col-sm-8 col-sx-8 pdd">
+								<ul class="ulli2">
+									<div class="pull-right">
+										<img class="proimg" src="girl2.jpeg">
+										<i class="fa fa-edit"></i>
+									</div>
+									<li class="liul">Subhashree Sahoo</li>
+									<li class="liul">Individual</li>
+									<li class="liul">shree@gmail.com</li>
+									<li class="liul"><span class="lispan">1111111111</span><a href="#">Change Number</a></li>
+									<li class="liul"><span class="lispan">Not shown due to security reasons</span><a href="#">Change Passowrd</a></li>
+									<li class="liul"><a href="#">Deactivate Account</a></li>
+
+								</ul>
+							</div>
+						</div>
+						</div>
+						<div class="tab-pane fade show" id="heading-two">
+							<div id="Edit"><h3 class="phdetail">Edit Login Details</h3><span class="spncls">(*Denotes Mandatory Fields)</span>
+						<form>
+						 <div class="col-lg-12 col-md-12 col-sm-12 col-sx-12 phdetail1">
+						 	<div class="col-lg-4 col-md-4 col-sm-4 col-sx-4">
+
+							<ul class="ulli">
+								<li class="liul">
+									<div class="form-group">
+										<label>Email Id :</label>
+									</div>
+								</li>
+							
+							<div class="form-group">
+								<label>User Type :</label>
+							</div>
+							<div class="form-group">
+								<label>Name :</label>
+							</div>
+							<div class="form-group">
+								<label>Mobile :</label>
+							</div>
+						</ul>
+  							</div>
+  							
+  							<div class="col-lg-8 col-md-8 col-sm-8 col-sx-8">
+  								<ul class="ulli2">
+								  <li class="liul">
+									<div class="form-group">
+										<input type="" name="">
+									</div>
+								  </li>
+								  <li class="liul">
+									<div class="form-group">
+										<select>
+											<option>Individual</option>
+											<option>Agent</option>
+											<option>Builder</option>
+										</select>									
+									</div>
+								  </li>
+								  <li class="liul">
+									<div class="form-group">
+										<input type="" name="">
+									</div>
+								  </li>
+								  <li class="liul">
+									<div class="form-group">
+										<input type="" name="">
+									</div>
+								  </li>
+								</ul>
+  							</div>
+  						</div>
+
+  							<div class="form-group">
+								
+  								<label class="jelly"><input type="checkbox"> I agree to RealEstate' Terms & Conditions. I would like to receive property related communication through Email, Call or SMS</label>
+  							</div>
+
+  							<div class="form-group">
+								<button class="button-30" role="button">Save</button>
+  							</div>
+						</form>
+					</div>
+						</div>
+						<div class="tab-pane fade show" id="heading-three">
+							<h3 class="phdetail">Change Password</h3><span class="spncls">(*Denotes Mandatory Fields)</span>
+						<form>
+						 <div class="col-lg-12 col-md-12 col-sm-12 col-sx-12 phdetail1">
+						 	<div class="col-lg-4 col-md-4 col-sm-4 col-sx-4">
+
+							<ul class="ulli">
+								<li class="liul">
+									<div class="form-group">
+										<label class="chlabel">Email Id :</label>
+									</div>
+								</li>
+							
+							<div class="form-group">
+								<label class="chlabel">Old Password<span class="spncls">*</span>:</label>
+							</div>
+							<div class="form-group">
+								<label class="chlabel">New Password<span class="spncls">*</span>:</label>
+							</div>
+							<div class="form-group">
+								<label class="chlabel">Confirm Password<span class="spncls">*</span>:</label>
+							</div>
+  							</ul>
+  							</div>
+  							
+  							<div class="col-lg-8 col-md-8 col-sm-8 col-sx-8">
+  								<ul class="ulli2">
+								  <li class="liul">
+									<div class="form-group">
+										<label class="chlabel2">Shree18sahoo@gmail.com</label>
+									</div>
+								  </li>
+								  <li class="liul">
+									<div class="form-group">
+										<input type="" name="">
+									</div>
+								  </li>
+								  <li class="liul">
+									<div class="form-group">
+										<input type="" name="">
+									</div>
+								  </li>
+								  <li class="liul">
+									<div class="form-group">
+										<input type="" name="">
+									</div>
+								  </li>
+								</ul>
+  							
+  							<div class="form-group">
+								<button class="button-30" role="button">Save</button>
+  							</div>
+  							</div>
+
+  						</div>
+						</form>
+							
+					</div>
+						
+						<div class="tab-pane fade show" id="heading-four">
+
+						<h3 class="phdetail">Saved Messages</h3>
+						<span>This section gives you easy access to contact Multiple Property Listings.In case you want to update the message, please edit & save it.</span>
+						<form>
+							<div class="form-group">
+								<textarea  rows="8" cols="100" class="txtar"></textarea>
+							</div>
+							<div class="form-group">
+								<button class="button-30" role="button">Save</button>
+  							</div>
+						</form>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="tab-pane fade bg-white text-dark" id="section-four">
+			<div class="row">
+				<div class="col-md-3 w-100">
+					<ul class="nav nav-tabs flex-column">
+						<li class="box mt-3" style="--color: #28a416">
+							<a href="#heading-p1" class="nav-link active" data-toggle="tab">
+							<div class="content">
+        						<div class="icon">
+          							<ion-icon name="code-slash-outline"></ion-icon>
+        						</div>
+        						<div class="text">
+         					   		<h3>My Properties</h3>
+       							</div>
+      						</div>
+        					</a>
+        				</li>
+        				<li class="box mt-3" style="--color: #26237ac7">
+							<a href="#heading-p2" class="nav-link" data-toggle="tab">
+							<div class="content">
+        						<div class="icon">
+          							<ion-icon name="code-slash-outline"></ion-icon>
+        						</div>
+        						<div class="text">
+         					   		<h3>Property Management</h3>
+       							</div>
+      						</div>
+        					</a>
+        				</li>
+        				<li class="box mt-3 mb-3" style="--color: #94098fc4">
+							<a href="#heading-p3" class="nav-link" data-toggle="tab">
+							<div class="content">
+        						<div class="icon">
+          							<ion-icon name="code-slash-outline"></ion-icon>
+        						</div>
+        						<div class="text">
+         					   		<h3>Help & Support</h3>
+       							</div>
+      						</div>
+        					</a>
+        				</li>
+        			</ul>
+        		</div>
+        		<div class="col-md-9 w-100">
+        			<div class="tab-content flex-center">
+						<div class="tab-pane fade show active" id="heading-p1">
+							<div class="col-lg-12 col-md-12 col-sm-12 col-sx-12 mt-3 phdetail1">
+								<div class="col-lg-8 col-md-8 col-sm-8 col-sx-8">
+									<span class="medium-bold phdetail">Hi Subhashree Sahoo,</span>
+								 	Welcome to your DashBoard
+								</div>
+								<div class="col-lg-4 col-md-4 col-sm-4 col-sx-4 phdetail2">
+									<span>For Paid Service -Talk to Experts :
+									<h6>+91 9870260930</h6></span> 
+								</div>
+							</div>
+
+	<div class="blog-post mb-3">
+		<div class="blog-post__img">
+			<button class="button-57" role="button"><span class="text">"No Photo Available"</span><span>Add Photo</span></button>
+		</div>
+		<div class="blog-post__info">
+		<div class="blog-post__date">
+			<span>
+				<div class="data-container">
+				<span>"Property Id : 1234567890"</span>
+				</div>
+			</span>
+			<span>Valid Till:Jul 27, 2022</span>
+		</div>
+		<h1 class="blog-post__title">₹79.90 Lac, 1500 Sq-ft</h1>
+		<p class="blog-post__text">
+			<div class="listing-card__prop-details--items prop-type">
+				<p>2 BHK Multistorey Apartment for Sale </p>
+			</div>
+			<div class="listing-card__prop-details--items location">
+				Patia, Bhubaneswar
+			</div>
+		</p>
+		<a href="#" class="blog-post__cta">Edit Property Add</a>
+		</div>
+	</div>
+			<div class="mb-dashboard__col visibility-widget">
+				<div class="visibility-widget__visibility-meter">
+					<div class="visibility-widget__visibility-meter--title">
+						Visibility Meter
+					</div>
+					<div class="visibility-widget__visibility-meter--wrapper">
+					<div class="gauge">
+						<div class="slice-colors">
+							<div class="st slice-item"></div>
+								<div class="st slice-item"></div>
+									<div class="st slice-item"></div>
+						</div>
+					<div class="needle" id="visibility-meter-needle" style="transform:rotate(30.6deg);"></div>
+						<div class="gauge-outer"></div>
+							<div class="gauge-inner" data-progress="17">17%</div>
+							</div>
+						</div>
+					<div class="visibility-widget__visibility-meter--status">Low Visibility</div>
+					<div class="visibility-widget__visibility-meter--text">Only <span class="bold">17% Buyers</span> can see your Property Ad</div>
+								</div>
+								<div class="visibility-widget__right">
+									<div class="visibility-widget__right--title">How to get Maximum  Buyers to see your Property Ad</div>
+									<div class="visibility-widget__right__card-container">
+										<div class="swiper-btn-prev swiper-button-disabled" id="prev-btn">
+											<span class="mb-button-circle-arrow small-btn reverse"></span>
+										</div>
+										
+<section id="slider">
+  <input type="radio" name="slider" id="s1">
+  <input type="radio" name="slider" id="s2">
+  <input type="radio" name="slider" id="s3" checked>
+  <input type="radio" name="slider" id="s4">
+  <label for="s1" id="slide1">
+														
+		<div class="visibility-widget__card--top-content">
+			<span class="green">+5%</span> More Buyers will see Ad
+		</div>
+		<div class="visibility-widget__card--bottom-content">
+			<i class="fa fa-home addhome ml-5" aria-hidden="true"></i>
+			<div class="visibility-widget__card--bottom-content__text">Add Property Photos</div>
+				<div class="arrow-button"></div>
+					<div class="premium-offer"></div>
+		</div>
+														
+	</label>
+  <label for="s2" id="slide2">
+  	<div class="visibility-widget__card--top-content">
+			<span class="green">+5%</span> More Buyers will see Ad
+		</div>
+		<div class="visibility-widget__card--bottom-content">
+			<i class="fa fa-home addhome ml-5" aria-hidden="true"></i>
+			<div class="visibility-widget__card--bottom-content__text">Add Additional Property Details</div>
+				<div class="arrow-button"></div>
+					<div class="premium-offer"></div>
+		</div>
+  </label>
+  <label for="s3" id="slide3">
+  	<div class="visibility-widget__card--top-content">
+			<span class="green">+70%</span> More Buyers will see Ad
+		</div>
+		<div class="visibility-widget__card--bottom-content">
+			<i class="fa fa-home addhome ml-5" aria-hidden="true"></i>
+			<div class="visibility-widget__card--bottom-content__text">Upgrade to Premium Services</div>
+				<div class="arrow-button"></div>
+					<div class="premium-offer">Get upto 50% off</div>
+		</div>
+	</label>
+  <label for="s4" id="slide4">
+  	<div class="visibility-widget__card--top-content">
+			<span class="green">+5%</span> More Buyers will see Ad
+		</div>
+		<div class="visibility-widget__card--bottom-content">
+			<i class="fa fa-home addhome ml-5" aria-hidden="true"></i>
+			<div class="visibility-widget__card--bottom-content__text">Download the App</div>
+				<div class="arrow-button"></div>
+					<div class="premium-offer"></div>
+		</div>
+	</label>
+
+</section>
+
+									</div>
+								</div>
+							</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+
+      <div class="blog-post">
+	<div class="blog-post__img mt-5">
+<div class="b2cgrid__bankOfrswiperCard__image"></div>
+	</div>
+	<div class="blog-post__info">
+		<div class="blog-post__date">
+			<span>
+				<div class="b2cgrid__bankOfrswiperCard__textBlock">
+					<div class="b2cgrid__bankOfrswiperCard__text1">
+						Get <span class="boldTxt"> 5% Additional Instant *Discount </span> using SBI Credit Cards.
+					</div>
+					
+					</div>
+				</span>
+
+		</div>
+<!-- 		<h1 class="blog-post__title">Shark Sighting</h1> -->
+		<p class="blog-post__text">
+			<div class="b2cgrid__bankOfrswiperCard__text2">
+				<span class="b2cgrid__bankOfrswiperCard__text2--ofrperiod">Limited Period Offer, Hurry!</span>
+					<span class="b2cgrid__bankOfrswiperCard__text2--claimTxt">
+						<span class="boldTxt">Go Premium &amp;</span> claim these before it's too late
+					</span>
+			</div>
+		</p>
+<!-- 		<a href="#" class="blog-post__cta">Read more</a> -->
+	</div>
+</div>
+
+    </div>
+    <div class="carousel-item">
+            <div class="blog-post">
+	<div class="blog-post__img mt-5">
+<div class="b2cgrid__bankOfrswiperCard__image"></div>
+	</div>
+	<div class="blog-post__info">
+		<div class="blog-post__date">
+			<span>
+				<div class="b2cgrid__bankOfrswiperCard__textBlock">
+					<div class="b2cgrid__bankOfrswiperCard__text1">
+						Get <span class="boldTxt"> 5% Additional Instant *Discount </span> using SBI Credit Cards.
+					</div>
+					
+					</div>
+				</span>
+
+		</div>
+<!-- 		<h1 class="blog-post__title">Shark Sighting</h1> -->
+		<p class="blog-post__text">
+			<div class="b2cgrid__bankOfrswiperCard__text2">
+				<span class="b2cgrid__bankOfrswiperCard__text2--ofrperiod">Limited Period Offer, Hurry!</span>
+					<span class="b2cgrid__bankOfrswiperCard__text2--claimTxt">
+						<span class="boldTxt">Go Premium &amp;</span> claim these before it's too late
+					</span>
+			</div>
+		</p>
+<!-- 		<a href="#" class="blog-post__cta">Read more</a> -->
+	</div>
+</div>
+    </div>
+    <div class="carousel-item">
+            <div class="blog-post">
+	<div class="blog-post__img mt-5">
+<div class="b2cgrid__bankOfrswiperCard__image"></div>
+	</div>
+	<div class="blog-post__info">
+		<div class="blog-post__date">
+			<span>
+				<div class="b2cgrid__bankOfrswiperCard__textBlock">
+					<div class="b2cgrid__bankOfrswiperCard__text1">
+						Get <span class="boldTxt"> 5% Additional Instant *Discount </span> using SBI Credit Cards.
+					</div>
+					
+					</div>
+				</span>
+
+		</div>
+<!-- 		<h1 class="blog-post__title">Shark Sighting</h1> -->
+		<p class="blog-post__text">
+			<div class="b2cgrid__bankOfrswiperCard__text2">
+				<span class="b2cgrid__bankOfrswiperCard__text2--ofrperiod">Limited Period Offer, Hurry!</span>
+					<span class="b2cgrid__bankOfrswiperCard__text2--claimTxt">
+						<span class="boldTxt">Go Premium &amp;</span> claim these before it's too late
+					</span>
+			</div>
+		</p>
+<!-- 		<a href="#" class="blog-post__cta">Read more</a> -->
+	</div>
+</div>
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+
+
+							
+							<div class="mb-dashboard__col property-detail-card" id="scrollTo">
+								<div class="property-detail-card__title small">Send Property Details Directly to Matching Buyers
+								</div>
+								<div class="property-detail-card__title">Found 
+									<span class="green">100 Buyers</span> for your 2 BHK Multistorey Apartment in Patia, Bhubaneswar
+								</div>
+<div class="col-lg-12 col-md-12 col-sm-12 col-sx-12 sliderspace">
+
+<div class="slider">
+  
+  <a href="#slide-1">1</a>
+  <a href="#slide-2">2</a>
+  <a href="#slide-3">3</a>
+  <a href="#slide-4">4</a>
+  <a href="#slide-5">5</a>
+
+  <div class="slides">
+    <div id="slide-1">
+      												<div class="buyer-card">
+													<div class="buyer-card__match-level excellent">Excellent Match
+													</div>
+													<div class="buyer-card__name">Pradip Kumar Panda</div>
+													<span class="buyer-card__new">New</span>
+													<div class="buyer-card__body">
+														<ul class="buyer-card__content">
+															<li class="buyer-card__attributes">Budget</li>
+															<li class="buyer-card__attributes">Buyers is looking in:</li>
+															<li class="buyer-card__attributes">Last Active On</li>
+															<li class="buyer-card__attributes">Properties Contacted</li>
+															<li class="buyer-card__values">₹ 63 Lac - ₹ 77 Lac</li>
+															<li class="buyer-card__values">Patia</li>
+															<li class="buyer-card__values">Jul 11, 2022</li>
+															<li class="buyer-card__values">9</li>
+														</ul>
+														<div class="buyer-card__bottom-container">
+															<div class="buyer-card-btn-container">
+																<span class="mb-button primary-btn big-btn ">Send Property Details</span>
+																<span class="mb-button-text-icn ">View Phone Number</span>
+															</div>
+														</div>
+													</div>
+												</div>
+    </div>
+    <div id="slide-2">
+												<div class="buyer-card">
+													<div class="buyer-card__match-level excellent">Excellent Match</div>
+													<div class="buyer-card__name">Suchismita sahoo</div>
+													<span class="buyer-card__new">New</span>
+													<div class="buyer-card__body">
+														<ul class="buyer-card__content">
+															<li class="buyer-card__attributes">Budget</li>
+															<li class="buyer-card__attributes">Buyers is looking in:</li>
+															<li class="buyer-card__attributes">Last Active On</li>
+															<li class="buyer-card__attributes">Properties Contacted</li>
+															<li class="buyer-card__values">₹ 58.5 Lac - ₹ 71.5 Lac</li>
+															<li class="buyer-card__values">Patia</li>
+															<li class="buyer-card__values">Jul 11, 2022</li>
+															<li class="buyer-card__values">3</li>
+														</ul>
+														<div class="buyer-card__bottom-container">
+															<div class="buyer-card-btn-container">
+																<span class="mb-button primary-btn big-btn ">Send Property Details</span>
+																<span class="mb-button-text-icn ">View Phone Number</span>
+															</div>
+														</div>
+													</div>
+												</div>
+    </div>
+    <div id="slide-3">
+												<div class="buyer-card">
+													<div class="buyer-card__match-level good">Good Match</div>
+													<div class="buyer-card__name">Partha Sarathi Parida</div>
+													<span class="buyer-card__new">New</span>
+													<div class="buyer-card__body">
+														<ul class="buyer-card__content">
+															<li class="buyer-card__attributes">Budget</li>
+															<li class="buyer-card__attributes">Buyers is looking in:</li>
+															<li class="buyer-card__attributes">Last Active On</li>
+															<li class="buyer-card__attributes">Properties Contacted</li>
+															<li class="buyer-card__values">₹ 63 Lac - ₹ 77 Lac</li>
+															<li class="buyer-card__values">Patia</li>
+															<li class="buyer-card__values">Jul 11, 2022</li>
+															<li class="buyer-card__values">13</li>
+														</ul>
+														<div class="buyer-card__bottom-container">
+															<div class="buyer-card-btn-container">
+																<span class="mb-button primary-btn big-btn ">Send Property Details</span>
+																<span class="mb-button-text-icn ">View Phone Number</span>
+															</div>
+														</div>
+													</div>
+												</div>
+    </div>
+    <div id="slide-4">
+												<div class="buyer-card">
+													<div class="buyer-card__match-level good">Good Match</div>
+													<div class="buyer-card__name">Pooja Thakur</div>
+													<span class="buyer-card__new">New</span>
+													<div class="buyer-card__body">
+														<ul class="buyer-card__content">
+															<li class="buyer-card__attributes">Budget</li>
+															<li class="buyer-card__attributes">Buyers is looking in:</li>
+															<li class="buyer-card__attributes">Last Active On</li>
+															<li class="buyer-card__attributes">Properties Contacted</li>
+															<li class="buyer-card__values">₹ 62.1 Lac - ₹ 75.9 Lac</li>
+															<li class="buyer-card__values">Patia</li>
+															<li class="buyer-card__values">Jul 11, 2022</li>
+															<li class="buyer-card__values">55</li>
+														</ul>
+														<div class="buyer-card__bottom-container">
+															<div class="buyer-card-btn-container">
+																<span class="mb-button primary-btn big-btn ">Send Property Details</span>
+																<span class="mb-button-text-icn ">View Phone Number</span>
+															</div>
+														</div>
+													</div>
+												</div>
+    </div>
+    <div id="slide-5">
+												<div class="buyer-card">
+													<div class="buyer-card__match-level good">Good Match</div>
+													<div class="buyer-card__name">Poulosty Das</div>
+													<span class="buyer-card__new">New</span>
+													<div class="buyer-card__body">
+														<ul class="buyer-card__content">
+															<li class="buyer-card__attributes">Budget</li>
+															<li class="buyer-card__attributes">Buyers is looking in:</li>
+															<li class="buyer-card__attributes">Last Active On</li>
+															<li class="buyer-card__attributes">Properties Contacted</li>
+															<li class="buyer-card__values">₹ 58.5 Lac - ₹ 71.5 Lac</li>
+															<li class="buyer-card__values">Patia</li>
+															<li class="buyer-card__values">Jul 11, 2022</li>
+															<li class="buyer-card__values">67</li>
+														</ul>
+														<div class="buyer-card__bottom-container">
+															<div class="buyer-card-btn-container">
+																<span class="mb-button primary-btn big-btn ">Send Property Details</span>
+																<span class="mb-button-text-icn ">View Phone Number</span>
+															</div>
+														</div>
+													</div>
+												</div>
+    </div>
+  </div>
+</div>
+
+</div>
+
+
+
+
+<div class="property-detail-card__free-limit-text active btn-go-premium ml-3 mt-3">You’ve reached your Free limit of 25 Buyers!
+	<span class="mb-button-text-icn ">Go Premium now</span>
+</div>
+<div class="btn-container btn-more-buyers">
+	<a href="/odashboard/matchingBuyers">
+		<span class="mb-button-text-icn ">See More Buyers</span>
+	</a>
+</div>
+</div>
+<div class="blog-post2 mb-3">
+	<div class="blog-post__img">
+<!-- 		<img src="images/post-photo.jpg"> -->
+<div class="fraud-widget__content__right">
+	<div class="title">Here’s how to protect yourself from such frauds.</div>Watch Now
+	<div>
+		<a class="video-icon"></a>
+	</div>
+</div>
+	</div>
+	<div class="blog-post__info">
+		<div class="blog-post__date">
+			<!-- <span>Sunday</span> -->
+			
+		</div>
+
+				<div class="fraud-widget__heading">
+					<span>Attention! </span>Protect yourself from QR code scams</div>
+			</span>
+
+		<!-- <h1 class="blog-post__title">Shark Sighting</h1> -->
+		<p class="blog-post__text">
+			<div class="fraud-widget__content__left"><div class="fraud-widget__content__left--heading">How to protect yourself against QR code scam?</div><ul><li>Never scan any QR code for receiving payments</li><li>PIN details are never required for receiving money</li><li>Do not click on suspicious emails asking your personal details</li></ul></div>
+		</p>
+		<!-- <a href="#" class="blog-post__cta">Read more</a> -->
+	</div>
+</div>
+
+
+
+
+
+<!-- pricing table start -->
+
+
+<! ========================  
+    Syed Sahar Ali Raza   	 
+  ========================	!>
+<div id="generic_price_table">   
+<section>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <!--PRICE HEADING START-->
+                    <div class="price-heading clearfix">
+                        <h1>Bootstrap Pricing Table</h1>
+                    </div>
+                    <!--//PRICE HEADING END-->
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            
+            <!--BLOCK ROW START-->
+            <div class="row">
+                <div class="col-md-4">
+                
+                	<!--PRICE CONTENT START-->
+                    <div class="generic_content clearfix">
+                        
+                        <!--HEAD PRICE DETAIL START-->
+                        <div class="generic_head_price clearfix">
+                        
+                            <!--HEAD CONTENT START-->
+                            <div class="generic_head_content clearfix">
+                            
+                            	<!--HEAD START-->
+                                <div class="head_bg"></div>
+                                <div class="head">
+                                    <span>Gold</span>
+                                </div>
+                                <!--//HEAD END-->
+                                
+                            </div>
+                            <!--//HEAD CONTENT END-->
+                            
+                            <!--PRICE START-->
+                            <div class="generic_price_tag clearfix">	
+                                <span class="price">
+                                    <span class="sign">$</span>
+                                    <span class="currency">99</span>
+                                    <span class="cent">.99</span>
+                                    <span class="month">/MON</span>
+                                </span>
+                            </div>
+                            <!--//PRICE END-->
+                            
+                        </div>                            
+                        <!--//HEAD PRICE DETAIL END-->
+                        
+                        <!--FEATURE LIST START-->
+                        <div class="generic_feature_list">
+                        	<ul>
+                            	<li><span>768</span> Purchased</li>
+                                <li><span>Validity</span> 90 Days</li>
+                                <li><span>90%</span>Property Visibility to of buyers</li>
+                                <li><span>7</span> Mobile no. of all responses</li>
+                                <li><span>No. of listings :</span> 1</li>
+                                <li><span> Higher </span>position in search for 8 days</li>
+                            </ul>
+                        </div>
+                        <!--//FEATURE LIST END-->
+                        
+                        <!--BUTTON START-->
+                        <div class="generic_price_btn clearfix">
+                        	<a class="" href="">Buy Now</a>
+                        </div>
+                        <!--//BUTTON END-->
+                        
+                    </div>
+                    <!--//PRICE CONTENT END-->
+                        
+                </div>
+                
+                <div class="col-md-4">
+                
+                	<!--PRICE CONTENT START-->
+                    <div class="generic_content active clearfix">
+                        
+                        <!--HEAD PRICE DETAIL START-->
+                        <div class="generic_head_price clearfix">
+                        
+                            <!--HEAD CONTENT START-->
+                            <div class="generic_head_content clearfix">
+                            
+                            	<!--HEAD START-->
+                                <div class="head_bg"></div>
+                                <div class="head">
+                                    <span>Diamond</span>
+                                </div>
+                                <!--//HEAD END-->
+                                
+                            </div>
+                            <!--//HEAD CONTENT END-->
+                            
+                            <!--PRICE START-->
+                            <div class="generic_price_tag clearfix">	
+                                <span class="price">
+                                    <span class="sign">$</span>
+                                    <span class="currency">199</span>
+                                    <span class="cent">.99</span>
+                                    <span class="month">/MON</span>
+                                </span>
+                            </div>
+                            <!--//PRICE END-->
+                            
+                        </div>                            
+                        <!--//HEAD PRICE DETAIL END-->
+                        
+                        <!--FEATURE LIST START-->
+                        <div class="generic_feature_list">
+                        	<ul>
+                            	<li><span>768</span> Purchased</li>
+                                <li><span>Validity</span> 120 Days</li>
+                                <li><span>90%</span>Property Visibility to of buyers</li>
+                                <li><span>7</span> Mobile no. of all responses</li>
+                                <li><span> Higher </span>position in search for 10 days</li>
+                                <li><span> Higher </span>Property Promotion through 500 Emails</li>
+                            </ul>
+                        </div>
+                        <!--//FEATURE LIST END-->
+                        
+                        <!--BUTTON START-->
+                        <div class="generic_price_btn clearfix">
+                        	<a class="" href="">Buy Now</a>
+                        </div>
+                        <!--//BUTTON END-->
+                        
+                    </div>
+                    <!--//PRICE CONTENT END-->
+                        
+                </div>
+                <div class="col-md-4">
+                
+                	<!--PRICE CONTENT START-->
+                    <div class="generic_content clearfix">
+                        
+                        <!--HEAD PRICE DETAIL START-->
+                        <div class="generic_head_price clearfix">
+                        
+                            <!--HEAD CONTENT START-->
+                            <div class="generic_head_content clearfix">
+                            
+                            	<!--HEAD START-->
+                                <div class="head_bg"></div>
+                                <div class="head">
+                                    <span>Titanium</span>
+                                </div>
+                                <!--//HEAD END-->
+                                
+                            </div>
+                            <!--//HEAD CONTENT END-->
+                            
+                            <!--PRICE START-->
+                            <div class="generic_price_tag clearfix">	
+                                <span class="price">
+                                    <span class="sign">$</span>
+                                    <span class="currency">299</span>
+                                    <span class="cent">.99</span>
+                                    <span class="month">/MON</span>
+                                </span>
+                            </div>
+                            <!--//PRICE END-->
+                            
+                        </div>                            
+                        <!--//HEAD PRICE DETAIL END-->
+                        
+                        <!--FEATURE LIST START-->
+                        <div class="generic_feature_list">
+                        	<ul>
+                            	<li><span>768</span> Purchased</li>
+                                <li><span>Validity</span> 180 Days</li>
+                                <li><span>90%</span>Property Visibility to of buyers</li>
+                                <li><span>7</span> Mobile no. of all responses</li>
+                                <li><span>No. of listings :</span> 1</li>
+                                <li><span> Higher </span>position in search for 50 days</li>
+                            </ul>
+                        </div>
+                        <!--//FEATURE LIST END-->
+                        
+                        <!--BUTTON START-->
+                        <div class="generic_price_btn clearfix">
+                        	<a class="" href="">Buy Now</a>
+                        </div>
+                        <!--//BUTTON END-->
+                        
+                    </div>
+                    <!--//PRICE CONTENT END-->
+                        
+                </div>
+            </div>	
+            <!--//BLOCK ROW END-->
+            
+        </div>
+    </section>             
+	
+</div>
+
+
+<!-- pricing table end -->
+
+
+
+
+
+
+
+
+
+
+
+
+	<div class="mb-dashboard__row m-t-24 m-b-12">
+		<div class="cust-row mb-3">
+			<div class="mb-dashboard__col cust-col p-0">
+				<div class="help-card">
+					<div class="help-card__title">Need help or stuck somewhere?</div>
+					<div class="help-card__content">
+						<div class="help-card__content__item">
+							<div class="help-card__content__item__img e-mail"></div>
+							<div class="help-card__content__item__link">Write to us at<br>
+								<a href="mailto:support@realestate.com">support@realestate.com</a>
+							</div>
+						</div>
+						<div class="help-card__content__item">
+							<div class="help-card__content__item__img query"></div>
+							<div class="help-card__content__item__link">For any queries go to<br>
+								<a href="https://www.realestate.com/help/" target="_blank" class="">Help Centre</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="mb-dashboard__col cust-col p-0">
+				<div class="social-card">
+					<div class="social-card__title">
+						<label>Share Listing on:</label>
+						<span class="social-card__link-copied " id="link-copied">Link copied</span>
+					</div>
+					<div class="social-card__content">
+						<span class="mb-button primary fb-btn medium-btn ">Facebook</span>
+						<span class="mb-button primary wa-btn medium-btn ">WhatsApp</span>
+						<span class="mb-button primary tw-btn medium-btn ">Twitter</span>
+						<span class="mb-button primary-btn medium-btn ">Mail</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+        				</div>
+        				
+        				
+        				
+        				
+
+						<div class="tab-pane fade show" id="heading-p2">
+							<div class="col-lg-12 col-md-12 col-sm-12 col-sx-12 mt-3 phdetail1">
+								<div class="col-lg-8 col-md-8 col-sm-8 col-sx-8">
+									<span class="medium-bold phdetail">Hi Subhashree Sahoo,</span>
+								 	Welcome to your DashBoard
+								</div>
+								<div class="col-lg-4 col-md-4 col-sm-4 col-sx-4 phdetail2">
+									<span>For Paid Service -Talk to Experts :
+									<h6>+91 9870260930</h6></span> 
+								</div>
+							</div>
+
+	<div class="blog-post mb-3">
+		<div class="blog-post__img">
+			<button class="button-57" role="button"><span class="text">"No Photo Available"</span><span>Add Photo</span></button>
+		</div>
+		<div class="blog-post__info">
+		<div class="blog-post__date">
+			<span>
+				<div class="data-container">
+				<span>"Property Id : 1234567890"</span>
+				</div>
+			</span>
+			<span>Valid Till:Jul 27, 2022</span>
+		</div>
+		<h1 class="blog-post__title">₹79.90 Lac, 1500 Sq-ft</h1>
+		<p class="blog-post__text">
+			<div class="listing-card__prop-details--items prop-type">
+				<p>2 BHK Multistorey Apartment for Sale </p>
+			</div>
+			<div class="listing-card__prop-details--items location">
+				Patia, Bhubaneswar
+			</div>
+		</p>
+		<a href="#" class="blog-post__cta">Edit Property Add</a>
+		</div>
+	</div>
+
+
+	<div class="blog-post2 mb-3">
+		<div class="blog-post__img">
+			<img src="sublease.png">
+		</div>
+		<div class="blog-post__info">
+			<div class="blog-post__date">
+			<span>
+				<div class="data-container">
+				<span class="blog-post__date">Introducing Property Management Service!</span>
+				</div>
+			</span>
+			<span>Now,enjoy all premium services from the comfort of home</span>
+			</div>
+
+		<h1 class="blog-post__title">Rent Agreement</h1>
+		<p class="blog-post__text">
+			<div class="listing-card__prop-details--items prop-type">
+				<p>Get a legally valid </p>
+			</div>
+			<div class="listing-card__prop-details--items2 location">
+				Rent Agreement for FREE
+			</div>
+		</p>
+		<a href="#" class="blog-post__cta">Get Agreement</a>
+		</div>
+	</div>
+
+
+		<h1  class="service__heading">Property Services for you</h1>
+	<div class="service__section">
+
+		<div class="col-lg-12 col-md-12 col-sm-12 col-sx-12 col121">
+			<div class="col-lg-6 col-md-6 col-sm-6 col-sx-6 service__text">
+				<img src="legal-advice.png">
+				<h4 class="service__h4">Legal Services</h4>
+				<p>Browse the highest quality listings, apply online, sign your lease, and even pay your rent from any device.</p>
+			</div>
+			<div class="col-lg-6 col-md-6 col-sm-6 col-sx-6 service__imgcol">
+				<img class="service__img" src="vastu.png">
+			</div>
+		</div><div class="col-lg-12 col-md-12 col-sm-12 col-sx-12 col121">
+			<div class="col-lg-6 col-md-6 col-sm-6 col-sx-6 service__imgcol">
+				<img class="service__img" src="vastu2.png">
+			</div>
+			<div class="col-lg-6 col-md-6 col-sm-6 col-sx-6 service__text">
+				<img src="compass.png">
+				<h4 class="service__h4">Vastu</h4>
+				<p>Need help choosing the right Vastu Expert?</p>
+			</div>
+			
+		</div><div class="col-lg-12 col-md-12 col-sm-12 col-sx-12 col121">
+			<div class="col-lg-6 col-md-6 col-sm-6 col-sx-6 service__text">
+				<img src="contract.png">
+				<h4 class="service__h4">FREE Rent Agreement</h4>
+				<p>Easy & super quick online drafting,
+Completely customisable template,
+Instant download available for FREE
+Stamping & delivery available at nominal prices</p>
+			</div>
+			<div class="col-lg-6 col-md-6 col-sm-6 col-sx-6 service__imgcol">
+				<img class="service__img"src="agreement.png">
+			</div>
+		</div><div class="col-lg-12 col-md-12 col-sm-12 col-sx-12 col121">
+			<div class="col-lg-6 col-md-6 col-sm-6 col-sx-6 service__imgcol">
+				<img class="service__img" src="tenant.png">
+			</div>
+			<div class="col-lg-6 col-md-6 col-sm-6 col-sx-6 service__text">
+				<img src="house-owner.png">
+				<h4 class="service__h4">Tenant Varification</h4>
+				<p>Verify your tenants to minimise the risk of property damage.</p>
+			</div>
+			
+		</div>
+	</div>
+
+
+
+	<div class="addcontain">
+        <h1>
+            Frequently Asked Question..?
+        </h1>
+        <div class="tab">
+            <input type="radio" name="acc" id="acc1">
+            <label for="acc1">
+                <h2>01</h2>
+                <h5>What is a Home Loan Balance Transfer?</h5>
+            </label>
+            <div class="content">
+                <p>It refers to the facility where the entire unpaid principal loan amount of your Home Loan is transferred to another bank for a lower rate of interest starting @6.4% </p>
+            </div>
+        </div>
+        <div class="tab">
+            <input type="radio" name="acc" id="acc2">
+            <label for="acc2">
+                <h2>02</h2>
+                <h5>How long does it take to switch a lender?</h5>
+            </label>
+            <div class="content">
+                <p>It usually takes around 5 to 10 days to switch lenders. After you obtain a NOC and apply with the new lender, the new loan provider will evaluate your application and decide on your eligibility.</p>
+            </div>
+        </div>
+        <div class="tab">
+            <input type="radio" name="acc" id="acc3">
+            <label for="acc3">
+                <h2>03</h2>
+                <h5>Can I get a top-up loan at the time of balance transfer?</h5>
+            </label>
+            <div class="content">
+                <p>Yes, if you need a top-up at the time of balance transfer, you can get it without any extra documentation.</p>
+            </div>
+        </div>
+        <div class="tab">
+            <input type="radio" name="acc" id="acc4">
+            <label for="acc4">
+                <h2>04</h2>
+                <h5>What is Loan Against Property (LAP)?</h5>
+            </label>
+            <div class="content">
+                <p>A Loan Against Property is a secured loan, wherein you can mortgage your residential, commercial or special use property to get immediate funds for any purpose, ranging from business expenditure to personal needs. In LAP, the property you own, which has a clear title, is kept with the bank as a collateral or security, to help you get financial assistance.</p>
+            </div>
+        </div>
+        <div class="tab">
+            <input type="radio" name="acc" id="acc5">
+            <label for="acc5">
+                <h2>05</h2>
+                <h5>What is the difference between Home Loan & Loan Against Property?</h5>
+            </label>
+            <div class="content">
+                <p>Both loans are different from each other. A Home Loan is taken by a borrower to purchase a new home, which can be under construction, ready-to-move or a second property or one that needs to be constructed from scratch. On the other hand, a Loan Against Property is taken by mortgaging an existing property (owned or rented residential, commercial or special use space), to finance immediate requirements (personal or business).</p>
+            </div>
+        </div>
+<div class="tab">
+            <input type="radio" name="acc" id="acc6">
+            <label for="acc6">
+                <h2>06</h2>
+                <h5>Can a Home Loan be Transferred from One Individual to Another?</h5>
+            </label>
+            <div class="content">
+                <p>Yes, it’s possible. If a property owner does not want to repay the loan any further, he/she can transfer the debt to someone else. But that will happen only if the owner sells the property to the new buyer and gets the ownership title transferred to the latter. The owner, who can also be referred to as the seller, is required to close his/her loan first before the transfer.</p>
+            </div>
+        </div>
+        <div class="tab">
+            <input type="radio" name="acc" id="acc7">
+            <label for="acc7">
+                <h2>07</h2>
+                <h5>Can a Home Loan be Transferred to a new buyer who has not been evaluated by the original lending bank ?</h5>
+            </label>
+            <div class="content">
+                <p>Yes, it’s possible. The bank will evaluate the prospective buyer of the house as a fresh loan applicant. The bank will then transfer the pending loan to the new buyer if it fits into the bank’s internal loan policy.</p>
+            </div>
+        </div>
+        <div class="tab">
+            <input type="radio" name="acc" id="acc8">
+            <label for="acc8">
+                <h2>08</h2>
+                <h5>How can I get an online Rent agreement for my Property?</h5>
+            </label>
+            <div class="content">
+                <p>As a property owner if you are renting out your property, a Rental Agreement is a must to avoid any kind of hassle and legal disputes with tenants. For your property, you can get a rent agreement for Free with Realestate. The draft for the agreement is completely customizable and you can easily make changes as per your requirements. If you require stamping for your agreement or a door step delivery of the document we can help you with that at nominal charges.</p>
+            </div>
+        </div>
+        <div class="tab">
+            <input type="radio" name="acc" id="acc9">
+            <label for="acc9">
+                <h2>09</h2>
+                <h5>How can Realestate help in timely Rent collection from Tenants?</h5>
+            </label>
+            <div class="content">
+                <p>Collecting timely Rent from Tenants has become quite hassle-free. With MB’s premium property services, Owners can avail Rent Management Service & set a timely reminder to collect Rent from Tenants.</p>
+            </div>
+        </div>
+        <div class="tab">
+            <input type="radio" name="acc" id="acc10">
+            <label for="acc10">
+                <h2>10</h2>
+                <h5>How to pay rent online through Realestate?</h5>
+            </label>
+            <div class="content">
+                <p>You can pay rent through Realestate, whether you are a registered user or a new user. All you need is a credit card and the bank account/UPI details of your landlord to complete the transaction.</p>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        				</div>						
+
+        			</div>
+  				</div>
+
+   		</div>
+	</div>
+
+		<div class="tab-pane fade bg-white text-dark" id="section-six">
+			<div class="row subcrprow">
+				<div class="col-md-3 w-100">
+					<ul class="nav nav-tabs flex-column">
+						<li class="box2 mt-3" style="--color: #28a416">
+							<a href="#subsc_h1" class="nav-link active" data-toggle="tab">
+							<div class="content">
+        						<div class="icon">
+          							<ion-icon name="code-slash-outline"></ion-icon>
+        						</div>
+        						<div class="text">
+         					   		<h3>Subscribed Services</h3>
+       							</div>
+      						</div>
+        					</a>
+        				</li>
+        				<li class="box2 mt-3" style="--color: #26237ac7">
+							<a href="#subsc_h2" class="nav-link" data-toggle="tab">
+							<div class="content">
+        						<div class="icon">
+          							<ion-icon name="code-slash-outline"></ion-icon>
+        						</div>
+        						<div class="text">
+         					   		<h3>Order History</h3>
+       							</div>
+      						</div>
+        					</a>
+        				</li>
+        				
+        			</ul>
+        		</div>
+        		<div class="col-md-9 w-100">
+        			<div class="tab-content flex-center">
+						<div class="tab-pane fade show active" id="subsc_h1">
+							<div class="col-lg-12 col-md-12 col-sm-12 col-sx-12 mt-3">
+								<h3 class="phdetail">Manage Subscriptions - Subscribed Services (0)</h3>
+								<div class="containertable1">
+  <table class="tbl1">
+    <thead>
+      <tr>
+        <th class="tblth">Cart ID / Order ID / Payment Mode</th>
+        <th class="tblth">	Service Title / Product Title</th>
+        <th class="tblth">Validity</th>
+        <th class="tblth">Take Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="tbltr">
+        <td class="tbltd">Cell 1</td>
+        <td class="tbltd">Cell 2</td>
+        <td class="tbltd">Cell 3</td>
+        <td class="tbltd">Cell 4</td>
+      </tr>
+      <tr class="tbltr">
+        <td class="tbltd">Cell 1</td>
+        <td class="tbltd">Cell 2</td>
+        <td class="tbltd">Cell 3</td>
+        <td class="tbltd">Cell 4</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+	</div>
+</div>						
+<div class="tab-pane fade show" id="subsc_h2">
+	<div class="col-lg-12 col-md-12 col-sm-12 col-sx-12 mt-3">
+		<h3 class="phdetail">Manage Subscriptions - Order History (0)</h3>
+			<div class="containertable1">
+  <table class="tbl1">
+    <thead>
+      <tr>
+        <th class="tblth">Product Title / Order ID/ Cart ID</th>
+        <th class="tblth">Order Date</th>
+        <th class="tblth">Order Status / Payment Mode</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="tbltr">
+        <td class="tbltd">Cell 1</td>
+        <td class="tbltd">Cell 2</td>
+        <td class="tbltd">Cell 3</td>
+      </tr>
+      <tr class="tbltr">
+        <td class="tbltd">Cell 1</td>
+        <td class="tbltd">Cell 2</td>
+        <td class="tbltd">Cell 3</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+							</div>
+		        				</div>						
+
+        			</div>
+  				</div>
+
+   		</div>
+		</div>
+</div>
+</div>
+
+<!-- footer start -->
+
+<footer class="main-foot-section">
+   <div class="footer-content">
+     <div class="left box2">
+       <div class="upper">
+         <div class="topic">About us</div>
+         <p>CodingLab is a channel where you can learn HTML,
+         CSS, and also JavaScript along with creative CSS Animations and Effects.</p>
+       </div>
+       <div class="lower">
+         <div class="topic">Contact us</div>
+         <div class="phone">
+           <a href="#"><i class="fa fa-phone"></i>+007 9089 6767</a>
+         </div>
+         <div class="email">
+           <a href="#"><i class="fa fa-envelope"></i>abc@gmail.com</a>
+         </div>
+       </div>
+     </div>
+     <div class="middle box2">
+       <div class="topic">Our Services</div>
+       <div><a href="#">Web Design, Development</a></div>
+       <div><a href="#">Web UX Design, Reasearch</a></div>
+       <div><a href="#">Web User Interface Design</a></div>
+       <div><a href="#">Theme Development, Design</a></div>
+       <div><a href="#">Mobile Application Design</a></div>
+       <div><a href="#">Wire raming & Prototyping</a></div>
+     </div>
+     <div class="right box2">
+       <div class="topic">Subscribe us</div>
+       <form action="#">
+         <input type="text" placeholder="Enter email address">
+         <input type="submit" name="" value="Send">
+         <div class="media-icons">
+           <a href="#"><i class="fa fa-facebook"></i></a>
+           <a href="#"><i class="fa fa-instagram"></i></a>
+           <a href="#"><i class="fa fa-twitter"></i></a>
+           <a href="#"><i class="fa fa-youtube"></i></a>
+           <a href="#"><i class="fa fa-linkedin"></i></a>
+         </div>
+       </form>
+     </div>
+   </div>
+   <div class="bottom">
+     <p>Copyright © 2022 <a href="#">DivineAi pvt. Ltd</a> All rights reserved</p>
+   </div>
+ </footer>
+
+
+<!-- footer end -->
+
+</body>
+
+</html>

@@ -1,0 +1,355 @@
+@media screen {
+   
+    .main{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .container{
+        height: 30vh;
+        width: 72%;
+        border: 2px solid gray;
+        border-radius: 5px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .img{
+        height: 180px;
+        margin: 15px 5px;
+    }
+    .con1{
+        display: flex;
+    }
+    .box2{
+        height: 30vh;
+        width: 180px;
+        background-color: bisque;
+        margin-top: -19px;
+        border-radius: 5px;
+    }
+    .btn1{
+        margin: auto;
+        height: 30px;
+        width: 120px;
+        border: none;
+        cursor: pointer;
+        border-radius: 20px;
+        background-color: red;
+        color: antiquewhite;
+        
+    }
+    .btn2{
+        margin: auto;
+        height: 30px;
+        width: 120px;
+        border: none;
+        cursor: pointer;
+        border-radius: 20px;
+        background-color: rgb(0, 106, 255);
+        color: antiquewhite;
+        
+    }
+    button:hover {
+        background-color: rgb(241, 241, 227);
+        border: 2px solid black;
+        color: blue;
+      }
+    .icon-cont{
+        display: flex;
+        height: 10vh;
+        width: 600px;
+        border: 2px solid gray;
+        border-radius: 5px;
+        justify-content: space-between;
+        background-color: rgb(236, 232, 227);
+        text-align: center;
+    }
+    .icon-cont  i{
+        color: blue;
+    }
+    .icon-cont  h3{
+        color: blue;
+    }
+    .container2{
+        height: 50vh;
+        width: 18%;
+        border: 2px solid gray;
+        border-radius: 5px;
+        text-align: center;
+    }
+    .img2{
+        height: 180px;
+    }
+}
+@media (min-width:280px) and (max-width:653px) {
+   
+    .container{
+        height: 30vh;
+        width: max-content;
+        border: 2px solid gray;
+        border-radius: 5px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .img{
+        height: 180px;
+        width: 180px;
+        margin: auto;
+    }
+    .con1{
+        display: flex;
+    }
+    .box2{
+        height: 30vh;
+        width: 180px;
+        background-color: bisque;
+        margin-top: -19px;
+        border-radius: 5px;
+    }
+    /* .price{
+        margin-top: -10px;
+    } */
+    .btn1{
+        margin: auto;
+        height: 30px;
+        width: 120px;
+        border: none;
+        cursor: pointer;
+        border-radius: 20px;
+        background-color: red;
+        
+    }
+    .btn2{
+        margin: auto;
+        height: 30px;
+        width: 120px;
+        border: none;
+        cursor: pointer;
+        border-radius: 20px;
+        background-color: rgb(0, 106, 255);
+        
+    }
+    button:hover {
+        background-color: rgb(241, 241, 227);
+        border: 2px solid black;
+      }
+    .icon-cont{
+        display: flex;
+        height: 10vh;
+        width: 300px;
+        border: 2px solid black;
+        border-radius: 5px;
+        justify-content: space-between;
+        background-color: bisque;
+        margin-top: -5px;
+    }
+    .container2{
+        display: none;
+    }
+    .img2{
+    display: none;    }
+}
+@media (min-width:768px) and (max-width:1024px) {
+    .container{
+        height: 30vh;
+        width: 100%;
+        border: 2px solid gray;
+        border-radius: 5px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .img{
+        height: 180px;
+        width: 180px;
+        margin: auto;
+    }
+    .con1{
+        display: flex;
+    }
+    .box2{
+        height: 30vh;
+        width: 180px;
+        background-color: bisque;
+        margin-top: -19px;
+        border-radius: 5px;
+    }
+    /* .price{
+        margin-top: -10px;
+    } */
+    .btn1{
+        margin: auto;
+        height: 30px;
+        width: 120px;
+        border: none;
+        cursor: pointer;
+        border-radius: 20px;
+        background-color: red;
+        
+    }
+    .btn2{
+        margin: auto;
+        height: 30px;
+        width: 120px;
+        border: none;
+        cursor: pointer;
+        border-radius: 20px;
+        background-color: rgb(0, 106, 255);
+        
+    }
+    button:hover {
+        background-color: rgb(241, 241, 227);
+        border: 2px solid black;
+      }
+    .icon-cont{
+        display: flex;
+        height: 10vh;
+        width: 300px;
+        border: 2px solid black;
+        border-radius: 5px;
+        justify-content: space-between;
+        background-color: bisque;
+        margin-top: -5px;
+    }
+    .container2{
+        display: none;
+    }
+    .img2{
+    display: none;    }
+}
+@media (min-width:820px) and (max-width:1180px) {
+    .container{
+        height: 20vh;
+        width: 100%;
+        border: 2px solid gray;
+        border-radius: 5px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .img{
+        height: 180px;
+        width: 180px;
+        margin-right: 10px;
+    }
+    .con1{
+        display: flex;
+    }
+    .box2{
+        height: 20vh;
+        width: 180px;
+        background-color: bisque;
+        margin-top: -19px;
+        border-radius: 5px;
+    }
+    /* .price{
+        margin-top: -10px;
+    } */
+    .btn1{
+        margin: auto;
+        height: 30px;
+        width: 120px;
+        border: none;
+        cursor: pointer;
+        border-radius: 20px;
+        background-color: red;
+        
+    }
+    .btn2{
+        margin: auto;
+        height: 30px;
+        width: 120px;
+        border: none;
+        cursor: pointer;
+        border-radius: 20px;
+        background-color: rgb(0, 106, 255);
+        
+    }
+    button:hover {
+        background-color: rgb(241, 241, 227);
+        border: 2px solid black;
+      }
+    .icon-cont{
+        display: flex;
+        height: 7vh;
+        width: 400px;
+        border: 2px solid black;
+        border-radius: 5px;
+        justify-content: space-between;
+        background-color: bisque;
+        margin-top: -5px;
+    }
+    .container2{
+        display: none;
+    }
+    .img2{
+    display: none;    }
+    /* .con1 h3 p{
+        margin-left: 15px;
+    } */
+}
+@media (min-width:1024px) and (max-width:1500px) {
+    .container{
+        height: 30vh;
+        width: 100%;
+        border: 2px solid gray;
+        border-radius: 5px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .img{
+        height: 180px;
+        width: 180px;
+        margin-right: 10px;
+    }
+    .con1{
+        display: flex;
+    }
+    .box2{
+        height: 30vh;
+        width: 180px;
+        background-color: bisque;
+        margin-top: -19px;
+        border-radius: 5px;
+    }
+    /* .price{
+        margin-top: -10px;
+    } */
+    .btn1{
+        margin: auto;
+        height: 30px;
+        width: 120px;
+        border: none;
+        cursor: pointer;
+        border-radius: 20px;
+        background-color: red;
+        
+    }
+    .btn2{
+        margin: auto;
+        height: 30px;
+        width: 120px;
+        border: none;
+        cursor: pointer;
+        border-radius: 20px;
+        background-color: rgb(0, 106, 255);
+        
+    }
+    button:hover {
+        background-color: rgb(241, 241, 227);
+        border: 2px solid black;
+      }
+    .icon-cont{
+        display: flex;
+        height: 10vh;
+        width: 600px;
+        border: 2px solid black;
+        border-radius: 5px;
+        justify-content: space-between;
+        background-color: bisque;
+        margin-top: -5px;
+    }
+    .container2{
+        display: none;
+    }
+    .img2{
+    display: none;    }
+}

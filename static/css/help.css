@@ -1,0 +1,71 @@
+.help_card {
+    padding-top: 100px;
+}
+.help_main_card {
+    background-image: linear-gradient(rgb(115, 173, 200), black);
+    color: #fff;
+    border: none;
+}
+.help_search_box {
+    width: 35%;
+}
+.help_search_box button {
+    background-color: rgb(83, 216, 42);
+}
+.uli {
+    color: white;
+    font-size: 20px;
+}
+.edit {
+    text-align: right;
+    /* margin-top: 10px; */
+}
+.uil-pen {
+    color: rgb(83, 216, 42);
+    border: 1px solid #00000094;
+    background-color: #00000094;
+    border-radius: 20px;
+    padding: 10px;
+}
+.help_h1 {
+    font-size: 25px;
+    color: gray;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+}
+.help_h3 {
+    font-size: 20px;
+    color: gray;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+}
+.help_topic {
+    padding-top: 20px;
+}
+.help_topic span{
+    background-color: red;
+    padding: 2px;
+    margin-right: 5px;
+}
+.help_link a{
+    display: block;
+    text-decoration: none;
+    color: black;
+    padding-left: 50px;
+}
+.bg-light {
+    border-radius: 10px;
+}
+.help_link i {
+    padding-right: 20px;
+}
+@media screen and (max-width:900px) {
+    .help_search_box {
+        width: 100%;
+        padding-top: 20px;
+    }
+    .help_card {
+        padding-top: 80px;
+    }
+     
+}

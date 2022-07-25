@@ -1,0 +1,944 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home Page</title>
+  <link rel="stylesheet" href="{{url_for('static', filename='css/Landing_page.css')}}">
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+  <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/nav.css')}}">
+  <link rel="stylesheet" href="{{url_for('static', filename='css/footer.css')}}">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+  <!-- bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+    
+      
+  <!-- end Bootstrap -->
+</head>
+
+<body style="background-color: rgb(237, 241, 245);">
+  <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="uil-angle-up"></i></button>
+  <header class="header">
+    <div class="container">
+      <div class="row v-center">
+        <div class="header-item item-left">
+          <div class="logo">
+            <a href="#">BigFarm</a>
+          </div>
+        </div>
+        <!-- menu start here -->
+        <div class="header-item item-center">
+          <div class="menu-overlay">
+          </div>
+          <nav class="menu">
+            <div class="mobile-menu-head">
+              <div class="go-back"><i class="uil uil-angle-left"></i></div>
+              <div class="current-menu-title"></div>
+              <div class="mobile-menu-close">&times;</div>
+            </div>
+            <ul class="menu-main">
+              <li>
+                <a href="#">Home</a>
+              </li>
+              <li class="menu-item-has-children">
+                <a href="#">Buy <i class="uil uil-angle-down"></i></a>
+                <div class="sub-menu mega-menu mega-menu-column-4">
+                  <div class="list-item">
+                    <h4 class="title">Popular Choices</h4>
+                    <ul>
+                      <li><a href="{{('property')}}">Product List</a></li>
+                      <li><a href="{{('property')}}">Owner Properties</a></li>
+                      <li><a href="{{('property')}}">Verified Properties</a></li>
+                      <li><a href="{{('property')}}">Immedieatly Available</a></li>
+                    </ul>
+                    <!-- <a href="#">
+                    <img src="img/p1.jpg" alt="new Product">
+                    <h4 class="title">Product 1</h4>
+                    </a> -->
+                  </div>
+                  <div class="list-item">
+                    <h4 class="title">Property Type</h4>
+                    <ul>
+                      <li><a href="{{('property')}}">Product List</a></li>
+                      <li><a href="{{('property')}}">Flat for rent</a></li>
+                      <li><a href="{{('property')}}">Villa for rent</a></li>
+                      <li><a href="{{('property')}}">Plot for rent</a></li>
+                    </ul>
+
+                  </div>
+                  <div class="list-item">
+                    <h4 class="title">Budget</h4>
+                    <ul>
+                      <li><a href="{{('property')}}">Under Rs.10,000</a></li>
+                      <li><a href="{{('property')}}">Rs. 10,000-20,000</a></li>
+                      <li><a href="{{('property')}}">Rs.15,000-25,000</a></li>
+                      <li><a href="{{('property')}}">Above 25,000</a></li>
+                    </ul>
+                  </div>
+                  <div class="list-item">
+                    <h4 class="title">Explore</h4>
+                    <ul>
+                      <li><a href="{{('property')}}">Builders In New-Delhi</a></li>
+                      <li><a href="{{('property')}}">Builders In New-Delhi</a></li>
+                      <li><a href="{{('property')}}">Localites In New-Delhi</a></li>
+                      <li><a href="{{('property')}}">Projects In New-Delhi</a></li>
+                      <li><a href="{{('property')}}">Investment Hotspot</a></li>
+                      <li><a href="{{('property')}}">Find An Agent</a></li>
+                    </ul>
+                  </div>
+                  <div class="list-item">
+                    <h4 class="title">Buying Tools</h4>
+                    <ul>
+                      <li><a href="{{('property')}}">Propworth</a></li>
+                      <li><a href="{{('property')}}">Rates&Trends</a></li>
+                      <li><a href="{{('property')}}">Buy vs Rent</a></li>
+                      <li><a href="{{('property')}}">Tips and Guides</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+              <li class="menu-item-has-children">
+                <a href="#">Rent <i class="uil uil-angle-down"></i></a>
+                <div class="sub-menu mega-menu mega-menu-column-4">
+                  <div class="list-item">
+                    <h4 class="title">Popular Choices</h4>
+                    <ul>
+                      <li><a href="{{('property')}}">Product List</a></li>
+                      <li><a href="{{('property')}}">Owner Properties</a></li>
+                      <li><a href="{{('property')}}">Verified Properties</a></li>
+                      <li><a href="{{('property')}}">Immedieatly Available</a></li>
+                    </ul>
+                    <h4 class="title">Property Type</h4>
+                    <ul>
+                      <li><a href="{{('property')}}">Villa for rent</a></li>
+                      <li><a href="{{('property')}}">Flat for rent</a></li>
+                      <li><a href="{{('property')}}">Plot for rent</a></li>
+                    </ul>
+                  </div>
+                  <div class="list-item">
+                    <h4 class="title">Budget</h4>
+                    <ul>
+                      <li><a href="{{('property')}}">Under Rs.10,000</a></li>
+                      <li><a href="{{('property')}}">Rs. 10,000-20,000</a></li>
+                      <li><a href="{{('property')}}">Rs.15,000-25,000</a></li>
+                      <li><a href="{{('property')}}">Above 25,000</a></li>
+                    </ul>
+                  </div>
+                  <div class="list-item">
+                    <img src="{{url_for('static', filename='img/A1.png')}}" alt="shop">
+                  </div>
+                </div>
+              </li>
+              <li class="menu-item-has-children">
+                <a href="#">Sell <i class="uil uil-angle-down"></i></a>
+                <div class="sub-menu mega-menu mega-menu-column-4">
+                  <div class="list-item">
+                    <h4 class="title">For Owner</h4>
+                    <ul>
+                      <li><a href="Landing_page.html">Post Property</a></li>
+                      <li><a href="#">My Dashboard</a></li>
+                    </ul>
+                    <h4 class="title">For Agent & Builder</h4>
+                    <ul>
+                      <li><a href="#">My Dashboard</a></li>
+                      <li><a href="#">Ad Packages</a></li>
+                      <li><a href="#">iAdvantage</a></li>
+                      <li><a href="#">Developer Lounge</a></li>
+                      <li><a href="#">Sales Enquiry</a></li>
+                    </ul>
+                  </div>
+                  <div class="list-item">
+                    <h4 class="title">Selling Tools</h4>
+                    <ul>
+                      <li><a href="#">Property Valuation</a></li>
+                      <li><a href="#">Find An Agent</a></li>
+                      <li><a href="#">Rates and Trends</a></li>
+                    </ul>
+                  </div>
+                  <div class="list-item">
+                    <img src="{{url_for('static', filename='img/A1.png')}}" alt="shop">
+                  </div>
+                </div>
+              </li>
+              <li class="menu-item-has-children">
+                <a href="#">Property Services<i class="uil uil-angle-down"></i></a>
+                <div class="sub-menu mega-menu mega-menu-column-4">
+                  <div class="list-item">
+                    <h4 class="title">Rent Services</h4>
+                    <ul>
+                      <li><a href="Landing_page.html">Pay Rent with Credit Card</a></li>
+                      <li><a href="#">Rent Agreement</a></li>
+                      <li><a href="#">Generate Rent Receipt</a></li>
+                      <li><a href="#">Tenant Verification</a></li>
+                      <li><a href="#">Office Leasing Assitance</a></li>
+                    </ul>
+                    <h4 class="title">Buy/Sell Services</h4>
+                    <ul>
+                      <li><a href="#">Property Valuation</a></li>
+                      <li><a href="#">Legal Title Check</a></li>
+                      <li><a href="#">Property Lawyers</a></li>
+                    </ul>
+                  </div>
+                  <div class="list-item">
+                    <img src="{{url_for('static', filename='img/A1.png')}}" alt="shop">
+                  </div>
+                </div>
+              </li>
+              <li>
+                <a href="#">Contact</a>
+              </li>
+              <li class="menu-item-has-children">
+                <a href="#">Help <i class="uil uil-angle-down"></i></a>
+                <div class="sub-menu single-column-menu">
+                  <ul>
+                    <li><a href="#">Help Center</a></li>
+                    <li><a href="#">Sales Enquiry</a></li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <!-- menu end here -->
+        <div class="header-item item-right">
+            <a href="{{'profiledetails'}}"><i class="fas fa-user"></i></a>
+          
+          <a href="#" data-bs-toggle="modal" data-bs-target="#iconModal" class="icon"><i class="fas fa-plus"></i> sell</a>
+          <!-- mobile menu trigger -->
+          <div class="mobile-menu-trigger">
+            <span></span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-indicator-container">
+      <div class="scroll-indicator-bar"></div>
+    </div>
+  </header>
+  <!-- header end -->
+  <!-- <section class="landing_home"> -->
+    <div class="rt-container">
+      <div class="col-rt-12">
+  <video id="background-video" class="main_video" autoplay loop muted>
+    <source src="{{url_for('static', filename='img/v1.mp4')}}" type="video/mp4">
+    <!-- <h1 class="landing_home">sszs</h1> -->
+  </video>
+  <div class="overlay">
+    <h3>I’m too busy working on my own grass
+      to notice if yours is greener</h3>
+  </div>
+</div>
+</div>
+  <!-- <h3>Agriculture is our wisest pursuit, because it will in the end contribute most to real wealth, good morals & happiness.</h3> -->
+  <!-- </section> -->
+    <!-- Modal -->
+<div class="modal fade" id="iconModal" tabindex="-1" aria-labelledby="iconModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-scrollable" style="z-index: 9999">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="iconModalLabel">Seller</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form action="http://127.0.0.1:5002/ads" method="post" enctype="multipart/form-data" class="row g-3 needs-validation" >
+          <div class="col-md-4">
+            <label for="validationCustom01" class="form-label">First name</label>
+            <input type="text" class="form-control" id="validationCustom01" name="first_name">
+            <div class="valid-feedback">
+              Looks good!
+            </div>
+          </div>
+          <div class="col-md-4">
+            <label for="validationCustom02" class="form-label">Last name</label>
+            <input type="text" class="form-control" id="validationCustom02" name="last_name">
+            <div class="valid-feedback">
+              Looks good!
+            </div>
+          </div>
+          <div class="col-md-4">
+            <label for="validationCustomUsername" class="form-label">Mobile Number</label>
+            <div class="input-group has-validation">
+              <span class="input-group-text" id="inputGroupPrepend">+91</span>
+              <input type="text" class="form-control" name="mobile_no" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+              <div class="invalid-feedback">
+                Enter valid Phone number.
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <label for="validationCustom03" class="form-label">Email id</label>
+            <input type="text" class="form-control" id="validationCustom03" name="email" required>
+            <div class="invalid-feedback">
+              Enter valid email id
+            </div>
+          </div>
+          <div class="col-md-4">
+            <label for="validationCustom04" class="form-label">property Details</label>
+            <input type="text" class="form-control" id="validationCustom04" name="property_details" required>
+              <!-- <option selected disabled value="">Choose...</option> -->
+             <!--  <option>...</option -->
+            
+            <div class="invalid-feedback">
+              Enter Property Details.
+            </div>
+          </div>
+          <div class="col-md-4">
+            <label for="validationCustom05" class="form-label">Price</label>
+            <input type="text" name="price" class="form-control" id="validationCustom05" required>
+            <div class="invalid-feedback">
+              Enter Price.
+            </div>
+          </div>
+          <div class="col-md-4">
+            <label for="validationCustom05" class="form-label">Address</label>
+            <input type="text" name="address" class="form-control" id="validationCustom05" required>
+            <div class="invalid-feedback">
+              Add Address.
+            </div>
+          </div>
+          <div class="col-md-4">
+            <label for="validationCustom05" class="form-label">Photo</label>
+            <input type="file" class="form-control" id="fileInput" name="photo[]" >
+            <div class="invalid-feedback">
+             Photo
+            </div>
+          </div>
+          <div class="col-md-4">
+            <label for="validationCustom05" class="form-label">Video</label>
+            <input type="file" class="form-control" id="fileInput" name="video[]" accept=".mp4">
+            <div class="invalid-feedback">
+              Video
+            </div>
+          </div>
+          <div class="mb-4">
+            <label for="validationTextarea" class="form-label">Description</label>
+            <input type="textarea" class="form-control valid" id="validationTextarea" name="description" placeholder="Required example textarea" style="height:60px;" required >
+           <div class="invalid-feedback">
+              Enter a message.
+          </div>
+          </div>
+          <div class="col-12">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+              <label class="form-check-label" for="invalidCheck">
+                Agree to terms and conditions
+              </label>
+              <div class="invalid-feedback">
+                You must agree before submitting.
+              </div>
+            </div>
+          </div>
+          <div class="col-12">
+            <button class="btn btn-success" type="submit" value="submit">Submit</button>
+        </div>
+    </form>
+      </div>
+      <!-- <div class="modal-footer">
+              <button type="button" class="btn btn-success">Submit</button>
+      </div> -->
+                 
+    </div>
+  </div>
+</div>
+  <section class="content">
+    <div id="Contact">
+      <h1>Property Services</h1>
+      <h2 class="underlines"></h2>
+      <div class="row row-cols-1 row-cols-md-4 g-4">
+        <div class="col">
+          <a href="#" style="text-decoration: none; color: black;">
+            <div class="card mb-3" style="max-width: 20rem; border-radius: 20px; height: 10rem;">
+              <div class="card-body text-secondary">
+                <h5 class="card-title"><span class="text-style">2K+</span> Properties listed for you</h5>
+                <p class="card-text card-2nd-text">Continue Last Search<i class="uil uil-arrow-right"></i> </p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col">
+          <a href="#" style="text-decoration: none; color: black;">
+            <div class="card mb-3" style="max-width: 20rem; border-radius: 20px; height: 10rem;">
+              <div class="card-body text-secondary">
+                <h5 class="card-title">Get personalised property recommendations from us</h5>
+                <p class="card-text card-1st-text">See all <i class="uil uil-arrow-right"></i></p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col">
+          <a href="#" style="text-decoration: none; color: black;">
+            <div class="card mb-3" style="max-width: 20rem; border-radius: 20px; height: 10rem;">
+              <div class="card-body text-secondary">
+                <h5 class="card-title">Top Handpicked Projects for You</h5>
+                <p class="card-text card-1st-text">See all <i class="uil uil-arrow-right"></i></p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col">
+          <a href="#" style="text-decoration: none; color: black;">
+            <div class="card mb-3" style="max-width: 20rem; border-radius: 20px; height: 10rem;">
+              <div class="card-body text-secondary">
+                <h5 class="card-title">Top Exclusive Owner Properties</h5>
+                <p class="card-text card-1st-text">See all <i class="uil uil-arrow-right"></i></p>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div id="About">
+      <h1>Featured Projects</h1>
+      <h2 class="underlines"></h2>
+      <div class="row row-cols-1 row-cols-md-3 g-5 justify-content-center">
+        <div class="col">
+          <a href="/property" style="text-decoration: none; color: black;">
+            <div class="card" style="border-radius: 20px;">
+              <img src="{{url_for('static', filename='img/features1.png')}}" id="Main_Card_img" class="card-img-top" alt="...">
+              <div class="card-body main_feature_Card">
+                <!-- <h5 class="card-title">Card title</h5> -->
+                <div class="card-text">
+                  <div class="row feature">
+                    <div class="col-2">
+                      <img src="{{url_for('static', filename='img/big_farm.png')}}" class="main_card_product_img" alt="">
+                    </div>
+                    <div class="col-6 main_Card_Content">
+                      <h6>Big Farm</h6>
+                      <span>by Evos Buildcon Pvt Ltd</span>
+                      <span>Barang, Bhubaneswar</span>
+                      <span>Marketed by Big Farm Pvt Ltd</span>
+                    </div>
+                    <div class="col main_Card_Content_for_details">
+                      <span class="main_Card_Content_for_room">Advance Level Growth</span>
+                      <p class="col main_Card_Content_for_money"><i class="uil uil-dollar-alt"></i><span>1.40 Lac
+                        </span>onwards</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="main_feature_btn">
+                <button>Hello</button>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col">
+          <a href="#" style="text-decoration: none; color: black;">
+            <div class="card" style="border-radius: 20px;">
+              <img src="{{url_for('static', filename='img/features2.jpg')}}" id="Main_Card_img" class="card-img-top" alt="...">
+              <div class="card-body">
+                <!-- <h5 class="card-title">Card title</h5> -->
+                <div class="card-text">
+                  <div class="row">
+                    <div class="col-2">
+                      <img src="{{url_for('static', filename='img/star.png')}}" class="main_card_product_img" alt="">
+                    </div>
+                    <div class="col-6 main_Card_Content">
+                      <h6>Star Farm</h6>
+                      <span>by Star Farm Pvt Ltd</span>
+                      <span>Patia, Bhubaneswar</span>
+                      <span>Marketed by Star Farm Pvt Ltd</span>
+                    </div>
+                    <div class="col main_Card_Content_for_details">
+                      <span class="main_Card_Content_for_room">Drone Farming</span>
+                      <p class="col main_Card_Content_for_money"><i class="uil uil-dollar-alt"></i><span>3.40 Lac
+                        </span>onwards</p>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div id="Blog">
+      <h1>Popular Owner Properties</h1>
+      <h2 class="underlines"></h2>
+      <div class="row row-cols-1 row-cols-md-2 g-5 popular">
+        <div class="col">
+          <a href="#" style="text-decoration: none; color: black;">
+            <div class="card mb-3" style="max-width: 840px;">
+              <div class="row g-0">
+                <div class="col-md-3">
+                  <img src="{{url_for('static', filename='img/popular3.jpg')}}" class="img-fluid rounded-start" alt="...">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <p class="card-text">Rice Field</p>
+                    <h6 class="card-title">$ 450 Lac | 1260 sqft</h6>
+                    <span>Khandagiri Phase2, Bhubaneswar</span>
+                    <p>Ready to move</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col">
+          <a href="#" style="text-decoration: none; color: black;">
+            <div class="card mb-3" style="max-width: 840px;">
+              <div class="row g-0">
+                <div class="col-md-3">
+                  <img src="{{url_for('static', filename='img/popular4.jpg')}}" class="img-fluid rounded-start" alt="...">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <p class="card-text">Sun-flower Field</p>
+                    <h6 class="card-title">$ 932 Lac | 2500 sqft </h6>
+                    <span>Damodarapur, Choudwar, Cuttack</span>
+                    <p>Ready to move</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div id="Contact">
+      <h1>Property Services</h1>
+      <h2 class="underlines"></h2>
+      <div class="row row-cols-1 row-cols-md-5 g-4 property_services">
+        <div class="col">
+          <a href="#" style="text-decoration: none; color: black;">
+            <div class="card h-100" id="card-hover-ani">
+              <img src="{{url_for('static', filename='img/home_loan.jpg')}}" id="secondary_img" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title ">Home Loans</h5>
+                <span class="card-text">View & compare your best offers and apply online</span>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col">
+          <a href="#" style="text-decoration: none; color: black;">
+            <div class="card h-100" id="card-hover-ani">
+              <img src="{{url_for('static', filename='img/pay_rent.jpg')}}" id="secondary_img" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Pay Rent</h5>
+                <span class="card-text">Pay your rent using Credit Card & earn rewards</span>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col">
+          <a href="#" style="text-decoration: none; color: black;">
+            <div class="card h-100" id="card-hover-ani">
+              <img src="{{url_for('static', filename='img/legal_services.jpg')}}" id="secondary_img" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title ">Legal Services</h5>
+                <span class="card-text">Get expert legal help for all property-related matters</span>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col">
+          <a href="#" style="text-decoration: none; color: black;">
+            <div class="card h-100" id="card-hover-ani">
+              <img src="{{url_for('static', filename='img/vastu.jpg')}}" id="secondary_img" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title ">Vastu</h5>
+                <span class="card-text">Consult the best Vastu Experts for your home or office</span>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col">
+          <a href="#" style="text-decoration: none; color: black;">
+            <div class="card h-100" id="card-hover-ani">
+              <img src="{{url_for('static', filename='img/legal_services2.jpg')}}" id="secondary_img" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title ">Legal Services</h5>
+                <span class="card-text">Get expert legal help for all property-related matters</span>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div id="Contact">
+      <h1>Top Projects</h1>
+      <h2 class="underlines"></h2>
+      <div class="row row-cols-1 row-cols-md-5 g-4 top_projects">
+        <div class="col">
+          <a href="#" style="text-decoration: none; color: black;">
+            <div class="card h-100" id="card-hover-ani">
+              <img src="{{url_for('static', filename='img/project1.jpg')}}" id="secondary_img" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Premium Green Field</h5>
+                <span class="card-text top_projects_span"> by Metro Buildtech Greater Kailash 1, New Delhi</span>
+                <p class="mt-2">1.05 ACRES</p>
+                <p>$ 2.60 Cr onwards</p>
+                <span class="top_projects_span">Marketed by Smart Homz</span>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col">
+          <a href="#" style="text-decoration: none; color: black;">
+            <div class="card h-100" id="card-hover-ani">
+              <img src="{{url_for('static', filename='img/project2.jpg')}}" id="secondary_img" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Luxury Farm House</h5>
+                <span class="card-text top_projects_span">by Realty Guru
+                  Defence Colony, New Delhi</span>
+                <p class="mt-2">4150 sqft</p>
+                <p>$ 5.50 Cronwards</p>
+                <span class="top_projects_span">Marketed by House True Real Estate Services</span>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col">
+          <a href="#" style="text-decoration: none; color: black;">
+            <div class="card h-100" id="card-hover-ani">
+              <img src="{{url_for('static', filename='img/project3.jpg')}}" id="secondary_img" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Premium Farm House</h5>
+                <span class="card-text top_projects_span">by Earthz Urban Space Greater Kailash 1, New Delhi</span>
+                <p class="mt-2">3000 sqft</p>
+                <p>$ 1.25 Cr onwards</p>
+                <span class="top_projects_span">Marketed by Ultra Reality Estates</span>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col">
+          <a href="#" style="text-decoration: none; color: black;">
+            <div class="card h-100" id="card-hover-ani">
+              <img src="img/project4.jpg" id="secondary_img" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Luxury Green Rice Farm</h5>
+                <span class="card-text top_projects_span"> by Metro Buildtech Greater Kailash 1, New Delhi</span>
+                <p class="mt-2">3 ACRES</p>
+                <p>$ 4.67 Cr onwards</p>
+                <span class="top_projects_span">Marketed by Findahouse</span>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col">
+          <a href="#" style="text-decoration: none; color: black;">
+            <div class="card h-100" id="card-hover-ani">
+              <img src="{{url_for('static', filename='img/project5.jpg')}}" id="secondary_img" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Small Green Pine Tree</h5>
+                <span class="card-text top_projects_span"> by Metro Buildtech Greater Kailash 1, New Delhi</span>
+                <p class="mt-2">1 Acres</p>
+                <p>$ 8.20 Cr onwards</p>
+                <span class="top_projects_span">Marketed by Agent Hero Realtor</span>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div id="Contact">
+      <h1>Trending In Bhubaneswar</h1>
+      <h2 class="underlines"></h2>
+      <div class="row row-cols-1 row-cols-md-5 g-4 top_projects">
+        <div class="col">
+          <a href="#" style="text-decoration: none; color: black;">
+            <div class="card h-100" id="card-hover-ani">
+              <img src="{{url_for('static', filename='img/trending1.jpg')}}" id="secondary_img" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Premium Farming</h5>
+                <span class="card-text top_projects_span"> by Metro Buildtech Greater Kailash 1, New Delhi</span>
+                <p class="mt-2">$ 2.60 Cr | 1 Acres</p>
+                <span class="top_projects_span">Marketed by Smart Homz</span>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col">
+          <a href="#" style="text-decoration: none; color: black;">
+            <div class="card h-100" id="card-hover-ani">
+              <img src="{{url_for('static', filename='img/trending2.jpg')}}" id="secondary_img" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Premium Farming</h5>
+                <span class="card-text top_projects_span">by Realty Guru Defence Colony, New Delhi</span>
+                <p>$ 5.50 Lac | 1.5 ACRES</p>
+                <span class="top_projects_span">Marketed by House True Real Estate Services</span>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col">
+          <a href="#" style="text-decoration: none; color: black;">
+            <div class="card h-100" id="card-hover-ani">
+              <img src="{{url_for('static', filename='img/trending3.jpg')}}" id="secondary_img" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Golden Wheat Field</h5>
+                <span class="card-text top_projects_span">by Earthz Urban Space Greater Kailash 1, New Delhi</span>
+                <p>$ 1.25 Cr | 2860 sqft</p>
+                <span class="top_projects_span">Marketed by Ultra Reality Estates</span>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col">
+          <a href="#" style="text-decoration: none; color: black;">
+            <div class="card h-100" id="card-hover-ani">
+              <img src="{{url_for('static', filename='img/trending4.jpg')}}" id="secondary_img" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Corn Green Field</h5>
+                <span class="card-text top_projects_span"> by Metro Buildtech Greater Kailash 1, New Delhi</span>
+                <p>$ 4.67 Cr | 2000 sqft</p>
+                <span class="top_projects_span">Marketed by Findahouse</span>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col">
+          <a href="#" style="text-decoration: none; color: black;">
+            <div class="card h-100" id="card-hover-ani">
+              <img src="{{url_for('static', filename='img/trending5.jpg')}}" id="secondary_img" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Luxury Green Garden</h5>
+                <span class="card-text top_projects_span"> by Metro Buildtech Greater Kailash 1, New Delhi</span>
+                <p>$ 8.20 Cr | 1200 sqft</p>
+                <span class="top_projects_span">Marketed by Agent Hero Realtor</span>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div id="Blog">
+      <h1>New Project Gallery</h1>
+      <h2 class="underlines"></h2>
+      <div class="row row-cols-1 row-cols-md-3 g-5 new_project">
+        <div class="col">
+          <a href="#" style="text-decoration: none; color: black;">
+            <div class="card mb-3" style="max-width: 840px;">
+              <div class="row g-0">
+                <div class="col-md-4" id="new-project-gallery">
+                  <img src="{{url_for('static', filename='img/gallery1.jpg')}}" class="img-fluid rounded-start" alt="...">
+                </div>
+                <div class="col-md-8 new_project">
+                  <div class="card-body">
+                    <h5 class="card-title">Exotica Garden</h5>
+                    <span class="card-text">Exotica Pvt. Ltd</span>
+                    <span>Bhubaneswar</span>
+                    <p class="mt-2">$ 56 Lac || 3300 sqft</p>
+                    <span>Marketed by Big Farm Team</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col">
+          <a href="#" style="text-decoration: none; color: black;">
+            <div class="card mb-4" id="new-project-gallery" style="max-width: 840px;">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img src="{{url_for('static', filename='img/gallery2.jpg')}}" class="img-fluid rounded-start" alt="...">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">E-NAM</h5>
+                    <span class="card-text">E-NAME Govt.</span>
+                    <span>Cuttack</span>
+                    <p class="mt-2">$ 87 Lac || 1.25 Acres</p>
+                    <span>Marketed by Star Farm Team</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col">
+          <a href="#" style="text-decoration: none; color: black;">
+            <div class="card mb-3" id="new-project-gallery" style="max-width: 840px;">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img src="{{url_for('static', filename='img/gallery3.jpg')}}" class="img-fluid rounded-start" alt="...">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">Mahindra Farm</h5>
+                    <span class="card-text">Mahindra Farm Ltd</span>
+                    <span>Nayagarh</span>
+                    <p class="mt-2">60 Lac || 3300 sqft</p>
+                    <span>Marketed by Mahindra Team</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col">
+          <a href="#" style="text-decoration: none; color: black;">
+            <div class="card mb-3" id="new-project-gallery" style="max-width: 840px;">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img src="{{url_for('static', filename='img/gallery4.jpg')}}" class="img-fluid rounded-start" alt="...">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">Cairn India Limited</h5>
+                    <span class="card-text">Cairn Farm Pvt. Ltd</span>
+                    <span>Puri</span>
+                    <p class="mt-2">1.5 Cr || 3 Acres</p>
+                    <span>Marketed by Cairn Team</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col">
+          <a href="#" style="text-decoration: none; color: black;">
+            <div class="card mb-3" id="new-project-gallery" style="max-width: 840px;">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img src="{{url_for('static', filename='img/gallery5.jpg')}}" class="img-fluid rounded-start" alt="...">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">PM-Kisan</h5>
+                    <span class="card-text">PM-Kisan Govt.</span>
+                    <span>Kendrapara</span>
+                    <p class="mt-2">98 Lac || 8500 sqft</p>
+                    <span>Marketed by Kishan Team</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div id="explore">
+      <h1>Exclusive Owner Properties in Bhubaneswar</h1>
+      <h2 class="underlines"></h2>
+      <div class="row row-cols-1 row-cols-md-3 g-5 exclusive">
+        <div class="col">
+          <a href="#" style="text-decoration: none; color: black;">
+            <div class="card h-100" id="Main_Card">
+              <img src="{{url_for('static', filename='img/property5.jpg')}}" id="Main_Card_img" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">100 sqft Land</h5>
+                <p class="card-text mt-3">$ 79.07 Lac</p>
+                <span class="exclusive_place">Patia, Bhubaneswar</span>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted">Last updated 5 mins ago</small>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col">
+          <a href="#" style="text-decoration: none; color: black;">
+            <div class="card h-100" id="Main_Card">
+              <img src="{{url_for('static', filename='img/property6.jpg')}}" id="Main_Card_img" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">1272 sqft Land</h5>
+                <p class="card-text mt-3">$ 55 Lac</p>
+                <span class="mt-4 exclusive_place">Chandrasekharpur, Bhubaneswar</span>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted">Last updated 19 mins ago</small>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col">
+          <a href="#" style="text-decoration: none; color: black; color: black;">
+            <div class="card h-100" id="Main_Card">
+              <img src="{{url_for('static', filename='img/property8.jpg')}}" id="Main_Card_img" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">5 ACRES Land</h5>
+                <p class="card-text mt-3">$ 90.95 Lac</p>
+                <span class="mt-4 exclusive_place">Saheed Nagar, Bhubaneswar</span>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted">Last updated 1 hrs ago</small>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="main-foot-section">
+    <div class="footer-content">
+      <div class="left box">
+        <div class="upper">
+          <div class="topic">About us</div>
+          <p>CodingLab is a channel where you can learn HTML,
+            CSS, and also JavaScript along with creative CSS Animations and Effects.</p>
+        </div>
+        <div class="lower">
+          <div class="topic">Contact us</div>
+          <div class="phone">
+            <a href="#"><i class="fas fa-phone-volume"></i>+007 9089 6767</a>
+          </div>
+          <div class="email">
+            <a href="#"><i class="fas fa-envelope"></i>abc@gmail.com</a>
+          </div>
+        </div>
+      </div>
+      <div class="middle box">
+        <div class="topic">Our Services</div>
+        <div><a href="#">Web Design, Development</a></div>
+        <div><a href="#">Web UX Design, Reasearch</a></div>
+        <div><a href="#">Web User Interface Design</a></div>
+        <div><a href="#">Theme Development, Design</a></div>
+        <div><a href="#">Mobile Application Design</a></div>
+        <div><a href="#">Wire raming & Prototyping</a></div>
+      </div>
+      <div class="right box">
+        <div class="topic">Subscribe us</div>
+        <form action="#">
+          <input type="text" placeholder="Enter email address">
+          <input type="submit" name="" value="Send">
+          <div class="media-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="bottom">
+      <p>Copyright © 2020 <a href="#">DivineAi Pvt. Ltd</a> All rights reserved</p>
+    </div>
+  </footer>
+  <script src="js/sroll.js"></script>
+  <script src="js/form.js"></script>
+  <script src="js/nav.js"></script>
+  <script src="js/scroll_top.js"></script>
+
+  <!-- <script>
+    $(document).ready(function(){
+        $("#fileInput").change(function(){
+            var fileLength = this.files.length;
+            var match= ["image/jpeg","image/png","image/jpg","image/gif","video/mp4"];
+            var i;
+            for(i = 0; i < fileLength; i++){
+                var file = this.files[i];
+                var imagefile = file.type;
+                if(!((imagefile==match[0]) || (imagefile==match[1]) || (imagefile==match[2]) || (imagefile==match[3]))){
+                    alert('Please select a valid image file (JPEG/JPG/PNG/GIF/MP4).');
+                    $("#fileInput").val('');
+                    return false;
+                }
+            }
+        });
+    });
+    </script> -->
+
+</body>
+</html>
